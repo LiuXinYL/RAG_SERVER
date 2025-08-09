@@ -362,41 +362,13 @@ logging.basicConfig(level=logging.INFO)
 - ✅ 流式对话支持
 
 ### 计划功能
-- 🔄 多语言支持
 - 🔄 用户权限管理
 - 🔄 知识库可视化管理
+- 🔄 知识库召回优化
 - 🔄 批量文档处理
 - 🔄 API访问统计
 
-## 🤝 贡献指南
-
-1. Fork 项目
-2. 创建特性分支 (`git checkout -b feature/AmazingFeature`)
-3. 提交更改 (`git commit -m 'Add some AmazingFeature'`)
-4. 推送到分支 (`git push origin feature/AmazingFeature`)
-5. 开启 Pull Request
-
-## 📄 许可证
-
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
-
-## 📞 支持与联系
-
-- 📧 邮箱: [your-email@example.com]
-- 🐛 问题反馈: [GitHub Issues](https://github.com/your-repo/issues)
-- 📖 文档: [项目Wiki](https://github.com/your-repo/wiki)
-
 ---
-
-## 🙏 致谢
-
-感谢以下开源项目的支持：
-- [FastAPI](https://fastapi.tiangolo.com/) - 现代Python Web框架
-- [LangChain](https://langchain.com/) - LLM应用开发框架
-- [FAISS](https://faiss.ai/) - 向量相似性搜索
-- [Neo4j](https://neo4j.com/) - 图数据库
-- [DeepSeek](https://deepseek.com/) - 大语言模型
-
 ---
 
 *最后更新: 2025年1月20日*
