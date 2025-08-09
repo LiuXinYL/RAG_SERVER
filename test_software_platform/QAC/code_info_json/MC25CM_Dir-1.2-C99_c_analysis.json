@@ -1,0 +1,28 @@
+{
+  "file_info": {
+    "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Dir-1.2-C99.c",
+    "file_name": "MC25CM_Dir-1.2-C99.c",
+    "total_lines": 47,
+    "functions": [],
+    "global_variables": [],
+    "includes": [
+      "stddef.h> /* for size_t */"
+    ],
+    "defines": [],
+    "typedefs": [],
+    "structs": [],
+    "enums": [],
+    "parse_errors": [
+      "使用简化解析模式"
+    ],
+    "file_hash": "dbdc12d3f0db51d48fde8cb7d8fa5baa",
+    "parse_time": "2025-07-30T16:32:54.225743"
+  },
+  "functions": [],
+  "statistics": {
+    "total_functions": 0,
+    "total_variables": 0,
+    "total_lines": 47,
+    "has_errors": true
+  }
+}

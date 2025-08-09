@@ -1,0 +1,5423 @@
+{
+  "file_info": {
+    "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+    "file_name": "MC25CM_Rule-1.3.c",
+    "total_lines": 894,
+    "functions": [
+      {
+        "name": "Multi_Extern_Different_Type_1",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 436,
+        "end_line": 439,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [],
+        "called_functions": [],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 438,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [],
+        "complexity_score": 1,
+        "body_content": "void Multi_Extern_Different_Type_1 (void)\n{\n    extern int32_t n;                                       // expect: 1510\n}"
+      },
+      {
+        "name": "Multi_Extern_Different_Type_2",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 441,
+        "end_line": 444,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [],
+        "called_functions": [],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "n",
+            "var_type": "int",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 443,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [],
+        "complexity_score": 1,
+        "body_content": "void Multi_Extern_Different_Type_2 (void)\n{\n    extern int n;                                           // expect: 0626  1510\n}"
+      },
+      {
+        "name": "Overflow_In_Signed_Arithmetic_Operation",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 446,
+        "end_line": 490,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "n",
+          "x",
+          "mc25cm_n",
+          "i",
+          "scanf"
+        ],
+        "called_functions": [
+          "scanf"
+        ],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 449,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 453,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 454,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 461,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 462,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 473,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 474,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "i",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 475,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "x",
+            "var_type": "int",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 486,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 461,
+            "scope": "global",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 473,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 3,
+        "body_content": "void Overflow_In_Signed_Arithmetic_Operation (void)\n{\n  {\n    int32_t x = 40000000 * 40000000;                        // expect: 2800\n  }\n\n  {\n    int32_t n;\n    int32_t x;\n\n    n = 1000000000;\n    x = n * 4;                                              // expect: 2801\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t x = 2;\n\n    if (mc25cm_n > 0)\n    {\n      x = 4;\n    }\n\n    x = 1000000000 * x;                                     // expect: 2802\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t x = 4;\n    int32_t i;\n\n    for (i = 0; i < mc25cm_n; ++i)\n    {\n      x = 2;\n    }\n\n    x = 1000000000 * x;                                     // expect: 2803\n  }\n\n  {\n    int x;\n    scanf (\"%d\", & x);\n    ++ x;                                                   // expect: 2804\n  }\n}"
+      },
+      {
+        "name": "Dereference_Of_Null_Pointer",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 492,
+        "end_line": 524,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "x",
+          "mc25cm_n",
+          "v",
+          "i"
+        ],
+        "called_functions": [],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "x",
+            "var_type": "int *",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 499,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 504,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "v",
+            "var_type": "int",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 505,
+            "scope": "local",
+            "initial_value": "0"
+          },
+          {
+            "name": "x",
+            "var_type": "int *",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 506,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 515,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "v",
+            "var_type": "int",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 516,
+            "scope": "local",
+            "initial_value": "0"
+          },
+          {
+            "name": "x",
+            "var_type": "int *",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 517,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "i",
+            "var_type": "int",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 518,
+            "scope": "local",
+            "initial_value": "0"
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 504,
+            "scope": "global",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 515,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 3,
+        "body_content": "void Dereference_Of_Null_Pointer (void)\n{\n  {\n    * (int *) 0 = 0;                                        // expect: 2810\n  }\n\n  {\n    int * x = NULL;\n    * x = 0;                                                // expect: 2811\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int v = 0;\n    int * x = NULL;\n    if (mc25cm_n > 0)\n    {\n      x = & v;\n    }\n    * x = 0;                                                // expect: 2812\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int v = 0;\n    int * x = NULL;\n    for (int i = 0; i < mc25cm_n; ++ i)\n    {\n      x = & v;\n    }\n    * x = 0;                                                // expect: 2813\n  }\n}"
+      },
+      {
+        "name": "Arithmetic_Operation_On_Null_Pointer",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 526,
+        "end_line": 563,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "p",
+          "i",
+          "mc25cm_n",
+          "v"
+        ],
+        "called_functions": [],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "p",
+            "var_type": "int32_t *",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 529,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "p",
+            "var_type": "int32_t *",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 535,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "p",
+            "var_type": "int32_t *",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 541,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 551,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "i",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 552,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "v",
+            "var_type": "int32_t[2]",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 553,
+            "scope": "local",
+            "initial_value": "2"
+          },
+          {
+            "name": "p",
+            "var_type": "int32_t *",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 554,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "p",
+            "var_type": "int32_t *",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 541,
+            "scope": "global",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 551,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 3,
+        "body_content": "void Arithmetic_Operation_On_Null_Pointer (void)\n{\n  {\n    int32_t * p;\n\n    p = (int32_t *) NULL + 1 ;                              // expect: 2820\n  }\n\n  {\n    int32_t * p = NULL;\n\n    ++ p;                                                   // expect: 2821\n  }\n\n  {\n    extern int32_t * p;                                     // expect: 1510\n\n    if (p == NULL)\n    {\n    }\n\n    ++ p;                                                   // expect: 2822\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t i;\n    int32_t v [2];\n    int32_t * p = NULL;\n\n    for (i = 0; i < mc25cm_n; ++ i)\n    {\n      p = v;\n    }\n\n    p++;                                                    // expect: 2823\n  }\n}"
+      },
+      {
+        "name": "division_by_zero_1",
+        "return_type": "void",
+        "parameters": [
+          {
+            "name": "x",
+            "type": "int32_t",
+            "line": 565
+          },
+          {
+            "name": "n",
+            "type": "int32_t",
+            "line": 565
+          }
+        ],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": false,
+        "start_line": 565,
+        "end_line": 573,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "n",
+          "r",
+          "x"
+        ],
+        "called_functions": [],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": false,
+            "is_parameter": true,
+            "line_number": 565,
+            "scope": "parameter",
+            "initial_value": null
+          },
+          {
+            "name": "n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": false,
+            "is_parameter": true,
+            "line_number": 565,
+            "scope": "parameter",
+            "initial_value": null
+          },
+          {
+            "name": "r",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 567,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [],
+        "complexity_score": 2,
+        "body_content": "void division_by_zero_1( int32_t x, int32_t n )\n{\n  int32_t r;\n\n  if ( n == 0 )\n  {\n    r = x / n;                                              // expect:2831\n  }\n}"
+      },
+      {
+        "name": "Division_By_Zero",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 575,
+        "end_line": 612,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "x",
+          "y",
+          "i",
+          "mc25cm_n",
+          "r"
+        ],
+        "called_functions": [],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 582,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "y",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 583,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 590,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 600,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "r",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 601,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "i",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 602,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 603,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 590,
+            "scope": "global",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 600,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 3,
+        "body_content": "void Division_By_Zero (void)\n{\n  {\n    1000 / 0;                                               // expect: 2830\n  }\n\n  {\n    int32_t x;\n    int32_t y;\n\n    x = 0;\n    y = 10 / x;                                             // expect: 2831\n  }\n\n  {\n    extern int32_t x;                                       // expect: 1510\n\n    if (x == 0)\n    {\n    }\n\n    1000 / x;                                               // expect: 2832\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t r;\n    int32_t i;\n    int32_t x = 0;\n\n    for ( i = 0; i < mc25cm_n; ++i )\n    {\n      x = x + i;\n    }\n\n    r = 10 / x;                                             // expect: 2833\n  }\n}"
+      },
+      {
+        "name": "Dereference_Of_An_Invalid_Pointer_Value",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 614,
+        "end_line": 658,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "x",
+          "v",
+          "n",
+          "mc25cm_n",
+          "i"
+        ],
+        "called_functions": [],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "v",
+            "var_type": "int32_t[8]",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 617,
+            "scope": "local",
+            "initial_value": "8"
+          },
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 618,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 628,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "v",
+            "var_type": "int32_t[8]",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 629,
+            "scope": "local",
+            "initial_value": "8"
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 635,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "v",
+            "var_type": "int32_t[8]",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 636,
+            "scope": "local",
+            "initial_value": "8"
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 646,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "v",
+            "var_type": "int32_t[8]",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 647,
+            "scope": "local",
+            "initial_value": "8"
+          },
+          {
+            "name": "i",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 648,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "x",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 649,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 635,
+            "scope": "global",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 646,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 3,
+        "body_content": "void Dereference_Of_An_Invalid_Pointer_Value (void)\n{\n  {\n    int32_t v [8] = { 0 };\n    int32_t x;\n\n    x = v [8];                                              // expect: 2840\n\n    v [8] = 0;                                              // expect: 2840\n\n    * (v + 8) = 0;                                          // expect: 2840\n  }\n\n  {\n    int32_t n = 8;\n    int32_t v [8];\n\n    v [n] = 1;                                              // expect: 2841\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t v [8];\n\n    if (mc25cm_n == 8)\n    {\n    }\n\n    v [mc25cm_n] = 1;                                         // expect: 2842\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t v [8];\n    int32_t i;\n    int32_t x = 8;\n\n    for (i = 0; i < mc25cm_n; ++ i)\n    {\n      -- x;\n    }\n\n    v [x] = 1;                                              // expect: 2843\n  }\n}"
+      },
+      {
+        "name": "Wide_Character_Types",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 660,
+        "end_line": 689,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "iswalpha",
+          "mc25cm_n",
+          "c",
+          "iswalnum",
+          "iswupper"
+        ],
+        "called_functions": [
+          "iswalpha",
+          "iswalnum",
+          "iswupper"
+        ],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 667,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "c",
+            "var_type": "int",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 668,
+            "scope": "local",
+            "initial_value": "'c'"
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 679,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "c",
+            "var_type": "int",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 680,
+            "scope": "local",
+            "initial_value": "666"
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 667,
+            "scope": "global",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 679,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 3,
+        "body_content": "void Wide_Character_Types (void)\n{\n  {\n    iswalpha (666);                                         // expect: 2806\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int c = 'c';\n\n    if (mc25cm_n > 0)\n    {\n      c += 666;\n    }\n\n    iswalnum (c);                                           // expect: 2807\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int c = 666;\n\n    while (-- mc25cm_n > 0)\n    {\n      c -= 8;\n    }\n\n    iswupper (c);                                           // expect: 2808\n  }\n}"
+      },
+      {
+        "name": "Use_of_Uninitialised_Resource",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 691,
+        "end_line": 729,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "pthread_mutex_lock",
+          "mutex",
+          "pthread_mutex_unlock",
+          "mc25cm_n",
+          "pthread_mutex_init",
+          "m",
+          "pthread_mutex_destroy"
+        ],
+        "called_functions": [
+          "pthread_mutex_lock",
+          "pthread_mutex_unlock",
+          "pthread_mutex_init",
+          "pthread_mutex_destroy"
+        ],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "mutex",
+            "var_type": "pthread_mutex_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 694,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 701,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mutex",
+            "var_type": "pthread_mutex_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 702,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 714,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mutex",
+            "var_type": "pthread_mutex_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 715,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "m",
+            "var_type": "pthread_mutex_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 721,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 701,
+            "scope": "global",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 714,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 3,
+        "body_content": "void Use_of_Uninitialised_Resource (void)                   // expect: 1509\n{\n  {\n    pthread_mutex_t  mutex;\n\n    pthread_mutex_lock (& mutex);                           // expect: 2726\n    pthread_mutex_unlock (& mutex);                         // expect: 2726\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    pthread_mutex_t  mutex;\n\n    if (mc25cm_n > 0)\n    {\n      pthread_mutex_init (& mutex, NULL);\n    }\n\n    pthread_mutex_lock (& mutex);                           // expect: 2727\n    pthread_mutex_unlock (& mutex);                         // expect: 2727\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    pthread_mutex_t  mutex;\n\n    pthread_mutex_init (& mutex, 0);\n\n    while (--mc25cm_n)\n    {\n      pthread_mutex_t m;\n      mutex = m;\n    }\n\n    pthread_mutex_lock (& mutex);                           // expect: 2728\n    pthread_mutex_unlock (& mutex);                         // expect: 2728\n    pthread_mutex_destroy (& mutex);                        // expect: 2728\n  }\n}"
+      },
+      {
+        "name": "Use_of_Destroyed_Resource",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 731,
+        "end_line": 772,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "pthread_mutex_init",
+          "mutex",
+          "pthread_mutex_destroy",
+          "pthread_mutex_lock",
+          "pthread_mutex_unlock",
+          "mc25cm_n"
+        ],
+        "called_functions": [
+          "pthread_mutex_init",
+          "pthread_mutex_destroy",
+          "pthread_mutex_lock",
+          "pthread_mutex_unlock"
+        ],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "mutex",
+            "var_type": "pthread_mutex_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 734,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 743,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mutex",
+            "var_type": "pthread_mutex_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 744,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 759,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mutex",
+            "var_type": "pthread_mutex_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 760,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 743,
+            "scope": "global",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 759,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 3,
+        "body_content": "void Use_of_Destroyed_Resource (void)                       // expect: 1509\n{\n  {\n    pthread_mutex_t mutex;\n\n    pthread_mutex_init (& mutex, 0);\n    pthread_mutex_destroy (& mutex);\n    pthread_mutex_lock (& mutex);                           // expect: 2731\n    pthread_mutex_unlock (& mutex);                         // expect: 2731\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    pthread_mutex_t  mutex;\n\n    pthread_mutex_init (& mutex, 0);\n\n    if (mc25cm_n > 0)\n    {\n      pthread_mutex_destroy (& mutex);\n    }\n\n    pthread_mutex_lock (& mutex);                           // expect: 2732\n    pthread_mutex_unlock (& mutex);                         // expect: 2732\n  }\n\n\n  {\n    extern int32_t mc25cm_n;\n    pthread_mutex_t  mutex;\n\n    pthread_mutex_init (& mutex, 0);\n\n    while (-- mc25cm_n > 0)\n    {\n      pthread_mutex_destroy (& mutex);                      // expect: 2733\n    }\n\n    pthread_mutex_lock (& mutex);                           // expect: 2733\n    pthread_mutex_unlock (& mutex);                         // expect: 2733\n  }\n}"
+      },
+      {
+        "name": "Use_of_Uninitialised_File_Handle",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 774,
+        "end_line": 813,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "mc25cm_n"
+        ],
+        "called_functions": [],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 783,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 799,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 783,
+            "scope": "global",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 799,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 3,
+        "body_content": "void Use_of_Uninitialised_File_Handle (void)                // expect: 1509\n{\n  {\n    FILE * f;\n    fprintf (f, \"hello\");                                   // expect: 2746\n    fclose (f);                                             // expect: 2746\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    FILE *      f;\n    FILE *      g;\n\n    f = fopen (\"my_file.txt\", \"w\");\n\n    if (mc25cm_n > 0)\n    {\n      f = g;\n    }\n\n    fprintf (f, \"hello\");                                   // expect: 2747\n    fclose (f);                                             // expect: 2747\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    FILE *      f;\n    FILE *      g;\n\n    f = fopen (\"my_file.txt\", \"w\");\n\n    while (-- mc25cm_n > 0)\n    {\n      f = g;\n    }\n\n    fprintf (f, \"hello\");                                   // expect: 2748\n    fclose (f);                                             // expect: 2748\n  }\n}"
+      },
+      {
+        "name": "Use_of_freed_memory",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 815,
+        "end_line": 846,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "malloc",
+          "buf",
+          "free",
+          "strcat",
+          "mc25cm_n"
+        ],
+        "called_functions": [
+          "malloc",
+          "free",
+          "strcat"
+        ],
+        "has_return_statement": true,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "buf",
+            "var_type": "char *",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 818,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 831,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "buf",
+            "var_type": "char *",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 832,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "mc25cm_n",
+            "var_type": "int32_t",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 831,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 4,
+        "body_content": "void Use_of_freed_memory ()                                 // expect: 1509\n{\n  {\n    char *buf = (char *)malloc(32);\n\n    if (!buf)\n      return;\n\n    free(buf);\n\n    buf[0];                                                 // expect: 4866\n\n    strcat(buf, \"abc\");                                     // expect: 4866\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    char *buf = (char *)malloc(32);\n\n    if (!buf)\n      return;\n\n    if( mc25cm_n == 0 )\n    {\n      free(buf);\n    }\n\n    buf[0];                                                 // expect: 4867\n\n    strcat(buf, \"abc\");                                     // expect: 4867\n  }\n}"
+      },
+      {
+        "name": "Invalid_Thread_Id",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 848,
+        "end_line": 871,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "pthread_cancel",
+          "tid",
+          "Invalid_x",
+          "pthread_create",
+          "Invalid_thread",
+          "Invalid_y"
+        ],
+        "called_functions": [
+          "pthread_cancel",
+          "pthread_create"
+        ],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "tid",
+            "var_type": "pthread_t",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 852,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "",
+            "var_type": "void *",
+            "is_global": false,
+            "is_local": false,
+            "is_parameter": true,
+            "line_number": 855,
+            "scope": "parameter",
+            "initial_value": null
+          },
+          {
+            "name": "Invalid_x",
+            "var_type": "int",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 857,
+            "scope": "local",
+            "initial_value": null
+          },
+          {
+            "name": "Invalid_y",
+            "var_type": "int",
+            "is_global": false,
+            "is_local": true,
+            "is_parameter": false,
+            "line_number": 865,
+            "scope": "local",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [
+          {
+            "name": "Invalid_x",
+            "var_type": "int",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 857,
+            "scope": "global",
+            "initial_value": null
+          },
+          {
+            "name": "Invalid_y",
+            "var_type": "int",
+            "is_global": true,
+            "is_local": false,
+            "is_parameter": false,
+            "line_number": 865,
+            "scope": "global",
+            "initial_value": null
+          }
+        ],
+        "complexity_score": 3,
+        "body_content": "void Invalid_Thread_Id (void)\n{\n  pthread_cancel (0);                                       // expect: 4995\n\n  pthread_t tid = 0;\n  pthread_cancel (tid);                                     // expect: 4996\n\n  extern void * Invalid_thread (void *);\n\n  extern int Invalid_x;\n  if (Invalid_x != 0)\n  {\n    pthread_create (&tid, NULL, &Invalid_thread, NULL);\n  }\n  pthread_cancel (tid);                                     // expect: 4997\n\n  pthread_create (&tid, NULL, &Invalid_thread, NULL);\n  extern int Invalid_y;\n  while (Invalid_y --)\n  {\n    tid = 0;\n  }\n  pthread_cancel (tid);                                     // expect: 4998\n}"
+      },
+      {
+        "name": "Invalid_thread",
+        "return_type": "void *",
+        "parameters": [
+          {
+            "name": "unnamed",
+            "type": "void *",
+            "line": 855
+          }
+        ],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 855,
+        "end_line": 855,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [],
+        "called_functions": [],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [
+          {
+            "name": "",
+            "var_type": "void *",
+            "is_global": false,
+            "is_local": false,
+            "is_parameter": true,
+            "line_number": 855,
+            "scope": "parameter",
+            "initial_value": null
+          }
+        ],
+        "global_variables": [],
+        "complexity_score": 1,
+        "body_content": "  extern void * Invalid_thread (void *);"
+      },
+      {
+        "name": "Others",
+        "return_type": "void",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": false,
+        "start_line": 873,
+        "end_line": 876,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "printf"
+        ],
+        "called_functions": [
+          "printf"
+        ],
+        "has_return_statement": false,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [],
+        "global_variables": [],
+        "complexity_score": 1,
+        "body_content": "void Others (void)\n{\n  (void) printf (\"%e\", 0);                                  // expect: 0179\n}"
+      },
+      {
+        "name": "rule_0103",
+        "return_type": "int16_t",
+        "parameters": [],
+        "is_static": false,
+        "is_inline": false,
+        "is_extern": true,
+        "start_line": 878,
+        "end_line": 894,
+        "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+        "dependencies": [
+          "Overflow_In_Signed_Arithmetic_Operation",
+          "Dereference_Of_Null_Pointer",
+          "Arithmetic_Operation_On_Null_Pointer",
+          "Division_By_Zero",
+          "Dereference_Of_An_Invalid_Pointer_Value",
+          "Wide_Character_Types",
+          "Use_of_Uninitialised_Resource",
+          "Use_of_Destroyed_Resource",
+          "Use_of_Uninitialised_File_Handle",
+          "Use_of_freed_memory",
+          "Invalid_Thread_Id",
+          "Others"
+        ],
+        "called_functions": [
+          "Overflow_In_Signed_Arithmetic_Operation",
+          "Dereference_Of_Null_Pointer",
+          "Arithmetic_Operation_On_Null_Pointer",
+          "Division_By_Zero",
+          "Dereference_Of_An_Invalid_Pointer_Value",
+          "Wide_Character_Types",
+          "Use_of_Uninitialised_Resource",
+          "Use_of_Destroyed_Resource",
+          "Use_of_Uninitialised_File_Handle",
+          "Use_of_freed_memory",
+          "Invalid_Thread_Id",
+          "Others"
+        ],
+        "has_return_statement": true,
+        "return_value_type": null,
+        "comment": null,
+        "local_variables": [],
+        "global_variables": [],
+        "complexity_score": 1,
+        "body_content": "extern int16_t rule_0103 (void)\n{\n  Overflow_In_Signed_Arithmetic_Operation ();\n  Dereference_Of_Null_Pointer ();\n  Arithmetic_Operation_On_Null_Pointer ();\n  Division_By_Zero ();\n  Dereference_Of_An_Invalid_Pointer_Value ();\n  Wide_Character_Types ();\n  Use_of_Uninitialised_Resource ();\n  Use_of_Destroyed_Resource ();\n  Use_of_Uninitialised_File_Handle ();\n  Use_of_freed_memory ();\n  Invalid_Thread_Id ();\n  Others ();\n\n  return 0;\n}"
+      }
+    ],
+    "global_variables": [
+      {
+        "name": "n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 438,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "n",
+        "var_type": "int",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 443,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "x",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 449,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 453,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "x",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 454,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 461,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "x",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 462,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 473,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "x",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 474,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "i",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 475,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "x",
+        "var_type": "int",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 486,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "x",
+        "var_type": "int *",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 499,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 504,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "v",
+        "var_type": "int",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 505,
+        "scope": "global",
+        "initial_value": "0"
+      },
+      {
+        "name": "x",
+        "var_type": "int *",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 506,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 515,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "v",
+        "var_type": "int",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 516,
+        "scope": "global",
+        "initial_value": "0"
+      },
+      {
+        "name": "x",
+        "var_type": "int *",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 517,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "i",
+        "var_type": "int",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 518,
+        "scope": "global",
+        "initial_value": "0"
+      },
+      {
+        "name": "p",
+        "var_type": "int32_t *",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 529,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "p",
+        "var_type": "int32_t *",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 535,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "p",
+        "var_type": "int32_t *",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 541,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 551,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "i",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 552,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "v",
+        "var_type": "int32_t[2]",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 553,
+        "scope": "global",
+        "initial_value": "2"
+      },
+      {
+        "name": "p",
+        "var_type": "int32_t *",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 554,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "r",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 567,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "x",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 582,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "y",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 583,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "x",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 590,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 600,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "r",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 601,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "i",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 602,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "x",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 603,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "v",
+        "var_type": "int32_t[8]",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 617,
+        "scope": "global",
+        "initial_value": "8"
+      },
+      {
+        "name": "x",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 618,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 628,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "v",
+        "var_type": "int32_t[8]",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 629,
+        "scope": "global",
+        "initial_value": "8"
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 635,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "v",
+        "var_type": "int32_t[8]",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 636,
+        "scope": "global",
+        "initial_value": "8"
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 646,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "v",
+        "var_type": "int32_t[8]",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 647,
+        "scope": "global",
+        "initial_value": "8"
+      },
+      {
+        "name": "i",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 648,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "x",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 649,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 667,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "c",
+        "var_type": "int",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 668,
+        "scope": "global",
+        "initial_value": "'c'"
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 679,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "c",
+        "var_type": "int",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 680,
+        "scope": "global",
+        "initial_value": "666"
+      },
+      {
+        "name": "mutex",
+        "var_type": "pthread_mutex_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 694,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 701,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mutex",
+        "var_type": "pthread_mutex_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 702,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 714,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mutex",
+        "var_type": "pthread_mutex_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 715,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "m",
+        "var_type": "pthread_mutex_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 721,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mutex",
+        "var_type": "pthread_mutex_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 734,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 743,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mutex",
+        "var_type": "pthread_mutex_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 744,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 759,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mutex",
+        "var_type": "pthread_mutex_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 760,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 783,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 799,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "buf",
+        "var_type": "char *",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 818,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "mc25cm_n",
+        "var_type": "int32_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 831,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "buf",
+        "var_type": "char *",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 832,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "tid",
+        "var_type": "pthread_t",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 852,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "Invalid_x",
+        "var_type": "int",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 857,
+        "scope": "global",
+        "initial_value": null
+      },
+      {
+        "name": "Invalid_y",
+        "var_type": "int",
+        "is_global": true,
+        "is_local": false,
+        "is_parameter": false,
+        "line_number": 865,
+        "scope": "global",
+        "initial_value": null
+      }
+    ],
+    "includes": [
+      "mc25cmex.h",
+      "errno.h",
+      "pthread.h",
+      "stdio.h",
+      "stdlib.h",
+      "string.h",
+      "wctype.h"
+    ],
+    "defines": [
+      {
+        "name": "__llvm__",
+        "definition": "1",
+        "line": 2
+      },
+      {
+        "name": "__clang__",
+        "definition": "1",
+        "line": 3
+      },
+      {
+        "name": "__clang_major__",
+        "definition": "18",
+        "line": 4
+      },
+      {
+        "name": "__clang_minor__",
+        "definition": "1",
+        "line": 5
+      },
+      {
+        "name": "__clang_patchlevel__",
+        "definition": "1",
+        "line": 6
+      },
+      {
+        "name": "__clang_version__",
+        "definition": "\"18.1.1 (https://github.com/llvm/llvm-project.git dba2a75e9c7ef81fe84774ba5eee5e67e01d801a)\"",
+        "line": 7
+      },
+      {
+        "name": "__ATOMIC_RELAXED",
+        "definition": "0",
+        "line": 8
+      },
+      {
+        "name": "__ATOMIC_CONSUME",
+        "definition": "1",
+        "line": 9
+      },
+      {
+        "name": "__ATOMIC_ACQUIRE",
+        "definition": "2",
+        "line": 10
+      },
+      {
+        "name": "__ATOMIC_RELEASE",
+        "definition": "3",
+        "line": 11
+      },
+      {
+        "name": "__ATOMIC_ACQ_REL",
+        "definition": "4",
+        "line": 12
+      },
+      {
+        "name": "__ATOMIC_SEQ_CST",
+        "definition": "5",
+        "line": 13
+      },
+      {
+        "name": "__MEMORY_SCOPE_SYSTEM",
+        "definition": "0",
+        "line": 14
+      },
+      {
+        "name": "__MEMORY_SCOPE_DEVICE",
+        "definition": "1",
+        "line": 15
+      },
+      {
+        "name": "__MEMORY_SCOPE_WRKGRP",
+        "definition": "2",
+        "line": 16
+      },
+      {
+        "name": "__MEMORY_SCOPE_WVFRNT",
+        "definition": "3",
+        "line": 17
+      },
+      {
+        "name": "__MEMORY_SCOPE_SINGLE",
+        "definition": "4",
+        "line": 18
+      },
+      {
+        "name": "__OPENCL_MEMORY_SCOPE_WORK_ITEM",
+        "definition": "0",
+        "line": 19
+      },
+      {
+        "name": "__OPENCL_MEMORY_SCOPE_WORK_GROUP",
+        "definition": "1",
+        "line": 20
+      },
+      {
+        "name": "__OPENCL_MEMORY_SCOPE_DEVICE",
+        "definition": "2",
+        "line": 21
+      },
+      {
+        "name": "__OPENCL_MEMORY_SCOPE_ALL_SVM_DEVICES",
+        "definition": "3",
+        "line": 22
+      },
+      {
+        "name": "__OPENCL_MEMORY_SCOPE_SUB_GROUP",
+        "definition": "4",
+        "line": 23
+      },
+      {
+        "name": "__FPCLASS_SNAN",
+        "definition": "0x0001",
+        "line": 24
+      },
+      {
+        "name": "__FPCLASS_QNAN",
+        "definition": "0x0002",
+        "line": 25
+      },
+      {
+        "name": "__FPCLASS_NEGINF",
+        "definition": "0x0004",
+        "line": 26
+      },
+      {
+        "name": "__FPCLASS_NEGNORMAL",
+        "definition": "0x0008",
+        "line": 27
+      },
+      {
+        "name": "__FPCLASS_NEGSUBNORMAL",
+        "definition": "0x0010",
+        "line": 28
+      },
+      {
+        "name": "__FPCLASS_NEGZERO",
+        "definition": "0x0020",
+        "line": 29
+      },
+      {
+        "name": "__FPCLASS_POSZERO",
+        "definition": "0x0040",
+        "line": 30
+      },
+      {
+        "name": "__FPCLASS_POSSUBNORMAL",
+        "definition": "0x0080",
+        "line": 31
+      },
+      {
+        "name": "__FPCLASS_POSNORMAL",
+        "definition": "0x0100",
+        "line": 32
+      },
+      {
+        "name": "__FPCLASS_POSINF",
+        "definition": "0x0200",
+        "line": 33
+      },
+      {
+        "name": "__PRAGMA_REDEFINE_EXTNAME",
+        "definition": "1",
+        "line": 34
+      },
+      {
+        "name": "__VERSION__",
+        "definition": "\"Clang 18.1.1 (https://github.com/llvm/llvm-project.git dba2a75e9c7ef81fe84774ba5eee5e67e01d801a)\"",
+        "line": 35
+      },
+      {
+        "name": "__OBJC_BOOL_IS_BOOL",
+        "definition": "0",
+        "line": 36
+      },
+      {
+        "name": "__CONSTANT_CFSTRINGS__",
+        "definition": "1",
+        "line": 37
+      },
+      {
+        "name": "__clang_literal_encoding__",
+        "definition": "\"UTF-8\"",
+        "line": 38
+      },
+      {
+        "name": "__clang_wide_literal_encoding__",
+        "definition": "\"UTF-16\"",
+        "line": 39
+      },
+      {
+        "name": "__ORDER_LITTLE_ENDIAN__",
+        "definition": "1234",
+        "line": 40
+      },
+      {
+        "name": "__ORDER_BIG_ENDIAN__",
+        "definition": "4321",
+        "line": 41
+      },
+      {
+        "name": "__ORDER_PDP_ENDIAN__",
+        "definition": "3412",
+        "line": 42
+      },
+      {
+        "name": "__BYTE_ORDER__",
+        "definition": "__ORDER_LITTLE_ENDIAN__",
+        "line": 43
+      },
+      {
+        "name": "__LITTLE_ENDIAN__",
+        "definition": "1",
+        "line": 44
+      },
+      {
+        "name": "__CHAR_BIT__",
+        "definition": "8",
+        "line": 45
+      },
+      {
+        "name": "__BOOL_WIDTH__",
+        "definition": "8",
+        "line": 46
+      },
+      {
+        "name": "__SHRT_WIDTH__",
+        "definition": "16",
+        "line": 47
+      },
+      {
+        "name": "__INT_WIDTH__",
+        "definition": "32",
+        "line": 48
+      },
+      {
+        "name": "__LONG_WIDTH__",
+        "definition": "32",
+        "line": 49
+      },
+      {
+        "name": "__LLONG_WIDTH__",
+        "definition": "64",
+        "line": 50
+      },
+      {
+        "name": "__BITINT_MAXWIDTH__",
+        "definition": "8388608",
+        "line": 51
+      },
+      {
+        "name": "__SCHAR_MAX__",
+        "definition": "127",
+        "line": 52
+      },
+      {
+        "name": "__SHRT_MAX__",
+        "definition": "32767",
+        "line": 53
+      },
+      {
+        "name": "__INT_MAX__",
+        "definition": "2147483647",
+        "line": 54
+      },
+      {
+        "name": "__LONG_MAX__",
+        "definition": "2147483647L",
+        "line": 55
+      },
+      {
+        "name": "__LONG_LONG_MAX__",
+        "definition": "9223372036854775807LL",
+        "line": 56
+      },
+      {
+        "name": "__WCHAR_MAX__",
+        "definition": "65535",
+        "line": 57
+      },
+      {
+        "name": "__WCHAR_WIDTH__",
+        "definition": "16",
+        "line": 58
+      },
+      {
+        "name": "__WINT_MAX__",
+        "definition": "65535",
+        "line": 59
+      },
+      {
+        "name": "__WINT_WIDTH__",
+        "definition": "16",
+        "line": 60
+      },
+      {
+        "name": "__INTMAX_MAX__",
+        "definition": "9223372036854775807LL",
+        "line": 61
+      },
+      {
+        "name": "__INTMAX_WIDTH__",
+        "definition": "64",
+        "line": 62
+      },
+      {
+        "name": "__SIZE_MAX__",
+        "definition": "18446744073709551615ULL",
+        "line": 63
+      },
+      {
+        "name": "__SIZE_WIDTH__",
+        "definition": "64",
+        "line": 64
+      },
+      {
+        "name": "__UINTMAX_MAX__",
+        "definition": "18446744073709551615ULL",
+        "line": 65
+      },
+      {
+        "name": "__UINTMAX_WIDTH__",
+        "definition": "64",
+        "line": 66
+      },
+      {
+        "name": "__PTRDIFF_MAX__",
+        "definition": "9223372036854775807LL",
+        "line": 67
+      },
+      {
+        "name": "__PTRDIFF_WIDTH__",
+        "definition": "64",
+        "line": 68
+      },
+      {
+        "name": "__INTPTR_MAX__",
+        "definition": "9223372036854775807LL",
+        "line": 69
+      },
+      {
+        "name": "__INTPTR_WIDTH__",
+        "definition": "64",
+        "line": 70
+      },
+      {
+        "name": "__UINTPTR_MAX__",
+        "definition": "18446744073709551615ULL",
+        "line": 71
+      },
+      {
+        "name": "__UINTPTR_WIDTH__",
+        "definition": "64",
+        "line": 72
+      },
+      {
+        "name": "__SIZEOF_DOUBLE__",
+        "definition": "8",
+        "line": 73
+      },
+      {
+        "name": "__SIZEOF_FLOAT__",
+        "definition": "4",
+        "line": 74
+      },
+      {
+        "name": "__SIZEOF_INT__",
+        "definition": "4",
+        "line": 75
+      },
+      {
+        "name": "__SIZEOF_LONG__",
+        "definition": "4",
+        "line": 76
+      },
+      {
+        "name": "__SIZEOF_LONG_DOUBLE__",
+        "definition": "8",
+        "line": 77
+      },
+      {
+        "name": "__SIZEOF_LONG_LONG__",
+        "definition": "8",
+        "line": 78
+      },
+      {
+        "name": "__SIZEOF_POINTER__",
+        "definition": "8",
+        "line": 79
+      },
+      {
+        "name": "__SIZEOF_SHORT__",
+        "definition": "2",
+        "line": 80
+      },
+      {
+        "name": "__SIZEOF_PTRDIFF_T__",
+        "definition": "8",
+        "line": 81
+      },
+      {
+        "name": "__SIZEOF_SIZE_T__",
+        "definition": "8",
+        "line": 82
+      },
+      {
+        "name": "__SIZEOF_WCHAR_T__",
+        "definition": "2",
+        "line": 83
+      },
+      {
+        "name": "__SIZEOF_WINT_T__",
+        "definition": "2",
+        "line": 84
+      },
+      {
+        "name": "__SIZEOF_INT128__",
+        "definition": "16",
+        "line": 85
+      },
+      {
+        "name": "__INTMAX_TYPE__",
+        "definition": "long long int",
+        "line": 86
+      },
+      {
+        "name": "__INTMAX_FMTd__",
+        "definition": "\"lld\"",
+        "line": 87
+      },
+      {
+        "name": "__INTMAX_FMTi__",
+        "definition": "\"lli\"",
+        "line": 88
+      },
+      {
+        "name": "__INTMAX_C_SUFFIX__",
+        "definition": "LL",
+        "line": 89
+      },
+      {
+        "name": "__UINTMAX_TYPE__",
+        "definition": "long long unsigned int",
+        "line": 90
+      },
+      {
+        "name": "__UINTMAX_FMTo__",
+        "definition": "\"llo\"",
+        "line": 91
+      },
+      {
+        "name": "__UINTMAX_FMTu__",
+        "definition": "\"llu\"",
+        "line": 92
+      },
+      {
+        "name": "__UINTMAX_FMTx__",
+        "definition": "\"llx\"",
+        "line": 93
+      },
+      {
+        "name": "__UINTMAX_FMTX__",
+        "definition": "\"llX\"",
+        "line": 94
+      },
+      {
+        "name": "__UINTMAX_C_SUFFIX__",
+        "definition": "ULL",
+        "line": 95
+      },
+      {
+        "name": "__PTRDIFF_TYPE__",
+        "definition": "long long int",
+        "line": 96
+      },
+      {
+        "name": "__PTRDIFF_FMTd__",
+        "definition": "\"lld\"",
+        "line": 97
+      },
+      {
+        "name": "__PTRDIFF_FMTi__",
+        "definition": "\"lli\"",
+        "line": 98
+      },
+      {
+        "name": "__INTPTR_TYPE__",
+        "definition": "long long int",
+        "line": 99
+      },
+      {
+        "name": "__INTPTR_FMTd__",
+        "definition": "\"lld\"",
+        "line": 100
+      },
+      {
+        "name": "__INTPTR_FMTi__",
+        "definition": "\"lli\"",
+        "line": 101
+      },
+      {
+        "name": "__SIZE_TYPE__",
+        "definition": "long long unsigned int",
+        "line": 102
+      },
+      {
+        "name": "__SIZE_FMTo__",
+        "definition": "\"llo\"",
+        "line": 103
+      },
+      {
+        "name": "__SIZE_FMTu__",
+        "definition": "\"llu\"",
+        "line": 104
+      },
+      {
+        "name": "__SIZE_FMTx__",
+        "definition": "\"llx\"",
+        "line": 105
+      },
+      {
+        "name": "__SIZE_FMTX__",
+        "definition": "\"llX\"",
+        "line": 106
+      },
+      {
+        "name": "__WCHAR_TYPE__",
+        "definition": "unsigned short",
+        "line": 107
+      },
+      {
+        "name": "__WINT_TYPE__",
+        "definition": "unsigned short",
+        "line": 108
+      },
+      {
+        "name": "__SIG_ATOMIC_MAX__",
+        "definition": "2147483647",
+        "line": 109
+      },
+      {
+        "name": "__SIG_ATOMIC_WIDTH__",
+        "definition": "32",
+        "line": 110
+      },
+      {
+        "name": "__CHAR16_TYPE__",
+        "definition": "unsigned short",
+        "line": 111
+      },
+      {
+        "name": "__CHAR32_TYPE__",
+        "definition": "unsigned int",
+        "line": 112
+      },
+      {
+        "name": "__UINTPTR_TYPE__",
+        "definition": "long long unsigned int",
+        "line": 113
+      },
+      {
+        "name": "__UINTPTR_FMTo__",
+        "definition": "\"llo\"",
+        "line": 114
+      },
+      {
+        "name": "__UINTPTR_FMTu__",
+        "definition": "\"llu\"",
+        "line": 115
+      },
+      {
+        "name": "__UINTPTR_FMTx__",
+        "definition": "\"llx\"",
+        "line": 116
+      },
+      {
+        "name": "__UINTPTR_FMTX__",
+        "definition": "\"llX\"",
+        "line": 117
+      },
+      {
+        "name": "__FLT16_DENORM_MIN__",
+        "definition": "5.9604644775390625e-8F16",
+        "line": 118
+      },
+      {
+        "name": "__FLT16_HAS_DENORM__",
+        "definition": "1",
+        "line": 119
+      },
+      {
+        "name": "__FLT16_DIG__",
+        "definition": "3",
+        "line": 120
+      },
+      {
+        "name": "__FLT16_DECIMAL_DIG__",
+        "definition": "5",
+        "line": 121
+      },
+      {
+        "name": "__FLT16_EPSILON__",
+        "definition": "9.765625e-4F16",
+        "line": 122
+      },
+      {
+        "name": "__FLT16_HAS_INFINITY__",
+        "definition": "1",
+        "line": 123
+      },
+      {
+        "name": "__FLT16_HAS_QUIET_NAN__",
+        "definition": "1",
+        "line": 124
+      },
+      {
+        "name": "__FLT16_MANT_DIG__",
+        "definition": "11",
+        "line": 125
+      },
+      {
+        "name": "__FLT16_MAX_10_EXP__",
+        "definition": "4",
+        "line": 126
+      },
+      {
+        "name": "__FLT16_MAX_EXP__",
+        "definition": "16",
+        "line": 127
+      },
+      {
+        "name": "__FLT16_MAX__",
+        "definition": "6.5504e+4F16",
+        "line": 128
+      },
+      {
+        "name": "__FLT16_MIN_10_EXP__",
+        "definition": "( - 4 )",
+        "line": 129
+      },
+      {
+        "name": "__FLT16_MIN_EXP__",
+        "definition": "( - 13 )",
+        "line": 130
+      },
+      {
+        "name": "__FLT16_MIN__",
+        "definition": "6.103515625e-5F16",
+        "line": 131
+      },
+      {
+        "name": "__FLT_DENORM_MIN__",
+        "definition": "1.40129846e-45F",
+        "line": 132
+      },
+      {
+        "name": "__FLT_HAS_DENORM__",
+        "definition": "1",
+        "line": 133
+      },
+      {
+        "name": "__FLT_DIG__",
+        "definition": "6",
+        "line": 134
+      },
+      {
+        "name": "__FLT_DECIMAL_DIG__",
+        "definition": "9",
+        "line": 135
+      },
+      {
+        "name": "__FLT_EPSILON__",
+        "definition": "1.19209290e-7F",
+        "line": 136
+      },
+      {
+        "name": "__FLT_HAS_INFINITY__",
+        "definition": "1",
+        "line": 137
+      },
+      {
+        "name": "__FLT_HAS_QUIET_NAN__",
+        "definition": "1",
+        "line": 138
+      },
+      {
+        "name": "__FLT_MANT_DIG__",
+        "definition": "24",
+        "line": 139
+      },
+      {
+        "name": "__FLT_MAX_10_EXP__",
+        "definition": "38",
+        "line": 140
+      },
+      {
+        "name": "__FLT_MAX_EXP__",
+        "definition": "128",
+        "line": 141
+      },
+      {
+        "name": "__FLT_MAX__",
+        "definition": "3.40282347e+38F",
+        "line": 142
+      },
+      {
+        "name": "__FLT_MIN_10_EXP__",
+        "definition": "( - 37 )",
+        "line": 143
+      },
+      {
+        "name": "__FLT_MIN_EXP__",
+        "definition": "( - 125 )",
+        "line": 144
+      },
+      {
+        "name": "__FLT_MIN__",
+        "definition": "1.17549435e-38F",
+        "line": 145
+      },
+      {
+        "name": "__DBL_DENORM_MIN__",
+        "definition": "4.9406564584124654e-324",
+        "line": 146
+      },
+      {
+        "name": "__DBL_HAS_DENORM__",
+        "definition": "1",
+        "line": 147
+      },
+      {
+        "name": "__DBL_DIG__",
+        "definition": "15",
+        "line": 148
+      },
+      {
+        "name": "__DBL_DECIMAL_DIG__",
+        "definition": "17",
+        "line": 149
+      },
+      {
+        "name": "__DBL_EPSILON__",
+        "definition": "2.2204460492503131e-16",
+        "line": 150
+      },
+      {
+        "name": "__DBL_HAS_INFINITY__",
+        "definition": "1",
+        "line": 151
+      },
+      {
+        "name": "__DBL_HAS_QUIET_NAN__",
+        "definition": "1",
+        "line": 152
+      },
+      {
+        "name": "__DBL_MANT_DIG__",
+        "definition": "53",
+        "line": 153
+      },
+      {
+        "name": "__DBL_MAX_10_EXP__",
+        "definition": "308",
+        "line": 154
+      },
+      {
+        "name": "__DBL_MAX_EXP__",
+        "definition": "1024",
+        "line": 155
+      },
+      {
+        "name": "__DBL_MAX__",
+        "definition": "1.7976931348623157e+308",
+        "line": 156
+      },
+      {
+        "name": "__DBL_MIN_10_EXP__",
+        "definition": "( - 307 )",
+        "line": 157
+      },
+      {
+        "name": "__DBL_MIN_EXP__",
+        "definition": "( - 1021 )",
+        "line": 158
+      },
+      {
+        "name": "__DBL_MIN__",
+        "definition": "2.2250738585072014e-308",
+        "line": 159
+      },
+      {
+        "name": "__LDBL_DENORM_MIN__",
+        "definition": "4.9406564584124654e-324L",
+        "line": 160
+      },
+      {
+        "name": "__LDBL_HAS_DENORM__",
+        "definition": "1",
+        "line": 161
+      },
+      {
+        "name": "__LDBL_DIG__",
+        "definition": "15",
+        "line": 162
+      },
+      {
+        "name": "__LDBL_DECIMAL_DIG__",
+        "definition": "17",
+        "line": 163
+      },
+      {
+        "name": "__LDBL_EPSILON__",
+        "definition": "2.2204460492503131e-16L",
+        "line": 164
+      },
+      {
+        "name": "__LDBL_HAS_INFINITY__",
+        "definition": "1",
+        "line": 165
+      },
+      {
+        "name": "__LDBL_HAS_QUIET_NAN__",
+        "definition": "1",
+        "line": 166
+      },
+      {
+        "name": "__LDBL_MANT_DIG__",
+        "definition": "53",
+        "line": 167
+      },
+      {
+        "name": "__LDBL_MAX_10_EXP__",
+        "definition": "308",
+        "line": 168
+      },
+      {
+        "name": "__LDBL_MAX_EXP__",
+        "definition": "1024",
+        "line": 169
+      },
+      {
+        "name": "__LDBL_MAX__",
+        "definition": "1.7976931348623157e+308L",
+        "line": 170
+      },
+      {
+        "name": "__LDBL_MIN_10_EXP__",
+        "definition": "( - 307 )",
+        "line": 171
+      },
+      {
+        "name": "__LDBL_MIN_EXP__",
+        "definition": "( - 1021 )",
+        "line": 172
+      },
+      {
+        "name": "__LDBL_MIN__",
+        "definition": "2.2250738585072014e-308L",
+        "line": 173
+      },
+      {
+        "name": "__POINTER_WIDTH__",
+        "definition": "64",
+        "line": 174
+      },
+      {
+        "name": "__BIGGEST_ALIGNMENT__",
+        "definition": "16",
+        "line": 175
+      },
+      {
+        "name": "__WCHAR_UNSIGNED__",
+        "definition": "1",
+        "line": 176
+      },
+      {
+        "name": "__WINT_UNSIGNED__",
+        "definition": "1",
+        "line": 177
+      },
+      {
+        "name": "__INT8_TYPE__",
+        "definition": "signed char",
+        "line": 178
+      },
+      {
+        "name": "__INT8_FMTd__",
+        "definition": "\"hhd\"",
+        "line": 179
+      },
+      {
+        "name": "__INT8_FMTi__",
+        "definition": "\"hhi\"",
+        "line": 180
+      },
+      {
+        "name": "__INT8_C_SUFFIX__",
+        "definition": "",
+        "line": 181
+      },
+      {
+        "name": "__INT16_TYPE__",
+        "definition": "short",
+        "line": 182
+      },
+      {
+        "name": "__INT16_FMTd__",
+        "definition": "\"hd\"",
+        "line": 183
+      },
+      {
+        "name": "__INT16_FMTi__",
+        "definition": "\"hi\"",
+        "line": 184
+      },
+      {
+        "name": "__INT16_C_SUFFIX__",
+        "definition": "",
+        "line": 185
+      },
+      {
+        "name": "__INT32_TYPE__",
+        "definition": "int",
+        "line": 186
+      },
+      {
+        "name": "__INT32_FMTd__",
+        "definition": "\"d\"",
+        "line": 187
+      },
+      {
+        "name": "__INT32_FMTi__",
+        "definition": "\"i\"",
+        "line": 188
+      },
+      {
+        "name": "__INT32_C_SUFFIX__",
+        "definition": "",
+        "line": 189
+      },
+      {
+        "name": "__INT64_TYPE__",
+        "definition": "long long int",
+        "line": 190
+      },
+      {
+        "name": "__INT64_FMTd__",
+        "definition": "\"lld\"",
+        "line": 191
+      },
+      {
+        "name": "__INT64_FMTi__",
+        "definition": "\"lli\"",
+        "line": 192
+      },
+      {
+        "name": "__INT64_C_SUFFIX__",
+        "definition": "LL",
+        "line": 193
+      },
+      {
+        "name": "__UINT8_TYPE__",
+        "definition": "unsigned char",
+        "line": 194
+      },
+      {
+        "name": "__UINT8_FMTo__",
+        "definition": "\"hho\"",
+        "line": 195
+      },
+      {
+        "name": "__UINT8_FMTu__",
+        "definition": "\"hhu\"",
+        "line": 196
+      },
+      {
+        "name": "__UINT8_FMTx__",
+        "definition": "\"hhx\"",
+        "line": 197
+      },
+      {
+        "name": "__UINT8_FMTX__",
+        "definition": "\"hhX\"",
+        "line": 198
+      },
+      {
+        "name": "__UINT8_C_SUFFIX__",
+        "definition": "",
+        "line": 199
+      },
+      {
+        "name": "__UINT8_MAX__",
+        "definition": "255",
+        "line": 200
+      },
+      {
+        "name": "__INT8_MAX__",
+        "definition": "127",
+        "line": 201
+      },
+      {
+        "name": "__UINT16_TYPE__",
+        "definition": "unsigned short",
+        "line": 202
+      },
+      {
+        "name": "__UINT16_FMTo__",
+        "definition": "\"ho\"",
+        "line": 203
+      },
+      {
+        "name": "__UINT16_FMTu__",
+        "definition": "\"hu\"",
+        "line": 204
+      },
+      {
+        "name": "__UINT16_FMTx__",
+        "definition": "\"hx\"",
+        "line": 205
+      },
+      {
+        "name": "__UINT16_FMTX__",
+        "definition": "\"hX\"",
+        "line": 206
+      },
+      {
+        "name": "__UINT16_C_SUFFIX__",
+        "definition": "",
+        "line": 207
+      },
+      {
+        "name": "__UINT16_MAX__",
+        "definition": "65535",
+        "line": 208
+      },
+      {
+        "name": "__INT16_MAX__",
+        "definition": "32767",
+        "line": 209
+      },
+      {
+        "name": "__UINT32_TYPE__",
+        "definition": "unsigned int",
+        "line": 210
+      },
+      {
+        "name": "__UINT32_FMTo__",
+        "definition": "\"o\"",
+        "line": 211
+      },
+      {
+        "name": "__UINT32_FMTu__",
+        "definition": "\"u\"",
+        "line": 212
+      },
+      {
+        "name": "__UINT32_FMTx__",
+        "definition": "\"x\"",
+        "line": 213
+      },
+      {
+        "name": "__UINT32_FMTX__",
+        "definition": "\"X\"",
+        "line": 214
+      },
+      {
+        "name": "__UINT32_C_SUFFIX__",
+        "definition": "U",
+        "line": 215
+      },
+      {
+        "name": "__UINT32_MAX__",
+        "definition": "4294967295U",
+        "line": 216
+      },
+      {
+        "name": "__INT32_MAX__",
+        "definition": "2147483647",
+        "line": 217
+      },
+      {
+        "name": "__UINT64_TYPE__",
+        "definition": "long long unsigned int",
+        "line": 218
+      },
+      {
+        "name": "__UINT64_FMTo__",
+        "definition": "\"llo\"",
+        "line": 219
+      },
+      {
+        "name": "__UINT64_FMTu__",
+        "definition": "\"llu\"",
+        "line": 220
+      },
+      {
+        "name": "__UINT64_FMTx__",
+        "definition": "\"llx\"",
+        "line": 221
+      },
+      {
+        "name": "__UINT64_FMTX__",
+        "definition": "\"llX\"",
+        "line": 222
+      },
+      {
+        "name": "__UINT64_C_SUFFIX__",
+        "definition": "ULL",
+        "line": 223
+      },
+      {
+        "name": "__UINT64_MAX__",
+        "definition": "18446744073709551615ULL",
+        "line": 224
+      },
+      {
+        "name": "__INT64_MAX__",
+        "definition": "9223372036854775807LL",
+        "line": 225
+      },
+      {
+        "name": "__INT_LEAST8_TYPE__",
+        "definition": "signed char",
+        "line": 226
+      },
+      {
+        "name": "__INT_LEAST8_MAX__",
+        "definition": "127",
+        "line": 227
+      },
+      {
+        "name": "__INT_LEAST8_WIDTH__",
+        "definition": "8",
+        "line": 228
+      },
+      {
+        "name": "__INT_LEAST8_FMTd__",
+        "definition": "\"hhd\"",
+        "line": 229
+      },
+      {
+        "name": "__INT_LEAST8_FMTi__",
+        "definition": "\"hhi\"",
+        "line": 230
+      },
+      {
+        "name": "__UINT_LEAST8_TYPE__",
+        "definition": "unsigned char",
+        "line": 231
+      },
+      {
+        "name": "__UINT_LEAST8_MAX__",
+        "definition": "255",
+        "line": 232
+      },
+      {
+        "name": "__UINT_LEAST8_FMTo__",
+        "definition": "\"hho\"",
+        "line": 233
+      },
+      {
+        "name": "__UINT_LEAST8_FMTu__",
+        "definition": "\"hhu\"",
+        "line": 234
+      },
+      {
+        "name": "__UINT_LEAST8_FMTx__",
+        "definition": "\"hhx\"",
+        "line": 235
+      },
+      {
+        "name": "__UINT_LEAST8_FMTX__",
+        "definition": "\"hhX\"",
+        "line": 236
+      },
+      {
+        "name": "__INT_LEAST16_TYPE__",
+        "definition": "short",
+        "line": 237
+      },
+      {
+        "name": "__INT_LEAST16_MAX__",
+        "definition": "32767",
+        "line": 238
+      },
+      {
+        "name": "__INT_LEAST16_WIDTH__",
+        "definition": "16",
+        "line": 239
+      },
+      {
+        "name": "__INT_LEAST16_FMTd__",
+        "definition": "\"hd\"",
+        "line": 240
+      },
+      {
+        "name": "__INT_LEAST16_FMTi__",
+        "definition": "\"hi\"",
+        "line": 241
+      },
+      {
+        "name": "__UINT_LEAST16_TYPE__",
+        "definition": "unsigned short",
+        "line": 242
+      },
+      {
+        "name": "__UINT_LEAST16_MAX__",
+        "definition": "65535",
+        "line": 243
+      },
+      {
+        "name": "__UINT_LEAST16_FMTo__",
+        "definition": "\"ho\"",
+        "line": 244
+      },
+      {
+        "name": "__UINT_LEAST16_FMTu__",
+        "definition": "\"hu\"",
+        "line": 245
+      },
+      {
+        "name": "__UINT_LEAST16_FMTx__",
+        "definition": "\"hx\"",
+        "line": 246
+      },
+      {
+        "name": "__UINT_LEAST16_FMTX__",
+        "definition": "\"hX\"",
+        "line": 247
+      },
+      {
+        "name": "__INT_LEAST32_TYPE__",
+        "definition": "int",
+        "line": 248
+      },
+      {
+        "name": "__INT_LEAST32_MAX__",
+        "definition": "2147483647",
+        "line": 249
+      },
+      {
+        "name": "__INT_LEAST32_WIDTH__",
+        "definition": "32",
+        "line": 250
+      },
+      {
+        "name": "__INT_LEAST32_FMTd__",
+        "definition": "\"d\"",
+        "line": 251
+      },
+      {
+        "name": "__INT_LEAST32_FMTi__",
+        "definition": "\"i\"",
+        "line": 252
+      },
+      {
+        "name": "__UINT_LEAST32_TYPE__",
+        "definition": "unsigned int",
+        "line": 253
+      },
+      {
+        "name": "__UINT_LEAST32_MAX__",
+        "definition": "4294967295U",
+        "line": 254
+      },
+      {
+        "name": "__UINT_LEAST32_FMTo__",
+        "definition": "\"o\"",
+        "line": 255
+      },
+      {
+        "name": "__UINT_LEAST32_FMTu__",
+        "definition": "\"u\"",
+        "line": 256
+      },
+      {
+        "name": "__UINT_LEAST32_FMTx__",
+        "definition": "\"x\"",
+        "line": 257
+      },
+      {
+        "name": "__UINT_LEAST32_FMTX__",
+        "definition": "\"X\"",
+        "line": 258
+      },
+      {
+        "name": "__INT_LEAST64_TYPE__",
+        "definition": "long long int",
+        "line": 259
+      },
+      {
+        "name": "__INT_LEAST64_MAX__",
+        "definition": "9223372036854775807LL",
+        "line": 260
+      },
+      {
+        "name": "__INT_LEAST64_WIDTH__",
+        "definition": "64",
+        "line": 261
+      },
+      {
+        "name": "__INT_LEAST64_FMTd__",
+        "definition": "\"lld\"",
+        "line": 262
+      },
+      {
+        "name": "__INT_LEAST64_FMTi__",
+        "definition": "\"lli\"",
+        "line": 263
+      },
+      {
+        "name": "__UINT_LEAST64_TYPE__",
+        "definition": "long long unsigned int",
+        "line": 264
+      },
+      {
+        "name": "__UINT_LEAST64_MAX__",
+        "definition": "18446744073709551615ULL",
+        "line": 265
+      },
+      {
+        "name": "__UINT_LEAST64_FMTo__",
+        "definition": "\"llo\"",
+        "line": 266
+      },
+      {
+        "name": "__UINT_LEAST64_FMTu__",
+        "definition": "\"llu\"",
+        "line": 267
+      },
+      {
+        "name": "__UINT_LEAST64_FMTx__",
+        "definition": "\"llx\"",
+        "line": 268
+      },
+      {
+        "name": "__UINT_LEAST64_FMTX__",
+        "definition": "\"llX\"",
+        "line": 269
+      },
+      {
+        "name": "__INT_FAST8_TYPE__",
+        "definition": "signed char",
+        "line": 270
+      },
+      {
+        "name": "__INT_FAST8_MAX__",
+        "definition": "127",
+        "line": 271
+      },
+      {
+        "name": "__INT_FAST8_WIDTH__",
+        "definition": "8",
+        "line": 272
+      },
+      {
+        "name": "__INT_FAST8_FMTd__",
+        "definition": "\"hhd\"",
+        "line": 273
+      },
+      {
+        "name": "__INT_FAST8_FMTi__",
+        "definition": "\"hhi\"",
+        "line": 274
+      },
+      {
+        "name": "__UINT_FAST8_TYPE__",
+        "definition": "unsigned char",
+        "line": 275
+      },
+      {
+        "name": "__UINT_FAST8_MAX__",
+        "definition": "255",
+        "line": 276
+      },
+      {
+        "name": "__UINT_FAST8_FMTo__",
+        "definition": "\"hho\"",
+        "line": 277
+      },
+      {
+        "name": "__UINT_FAST8_FMTu__",
+        "definition": "\"hhu\"",
+        "line": 278
+      },
+      {
+        "name": "__UINT_FAST8_FMTx__",
+        "definition": "\"hhx\"",
+        "line": 279
+      },
+      {
+        "name": "__UINT_FAST8_FMTX__",
+        "definition": "\"hhX\"",
+        "line": 280
+      },
+      {
+        "name": "__INT_FAST16_TYPE__",
+        "definition": "short",
+        "line": 281
+      },
+      {
+        "name": "__INT_FAST16_MAX__",
+        "definition": "32767",
+        "line": 282
+      },
+      {
+        "name": "__INT_FAST16_WIDTH__",
+        "definition": "16",
+        "line": 283
+      },
+      {
+        "name": "__INT_FAST16_FMTd__",
+        "definition": "\"hd\"",
+        "line": 284
+      },
+      {
+        "name": "__INT_FAST16_FMTi__",
+        "definition": "\"hi\"",
+        "line": 285
+      },
+      {
+        "name": "__UINT_FAST16_TYPE__",
+        "definition": "unsigned short",
+        "line": 286
+      },
+      {
+        "name": "__UINT_FAST16_MAX__",
+        "definition": "65535",
+        "line": 287
+      },
+      {
+        "name": "__UINT_FAST16_FMTo__",
+        "definition": "\"ho\"",
+        "line": 288
+      },
+      {
+        "name": "__UINT_FAST16_FMTu__",
+        "definition": "\"hu\"",
+        "line": 289
+      },
+      {
+        "name": "__UINT_FAST16_FMTx__",
+        "definition": "\"hx\"",
+        "line": 290
+      },
+      {
+        "name": "__UINT_FAST16_FMTX__",
+        "definition": "\"hX\"",
+        "line": 291
+      },
+      {
+        "name": "__INT_FAST32_TYPE__",
+        "definition": "int",
+        "line": 292
+      },
+      {
+        "name": "__INT_FAST32_MAX__",
+        "definition": "2147483647",
+        "line": 293
+      },
+      {
+        "name": "__INT_FAST32_WIDTH__",
+        "definition": "32",
+        "line": 294
+      },
+      {
+        "name": "__INT_FAST32_FMTd__",
+        "definition": "\"d\"",
+        "line": 295
+      },
+      {
+        "name": "__INT_FAST32_FMTi__",
+        "definition": "\"i\"",
+        "line": 296
+      },
+      {
+        "name": "__UINT_FAST32_TYPE__",
+        "definition": "unsigned int",
+        "line": 297
+      },
+      {
+        "name": "__UINT_FAST32_MAX__",
+        "definition": "4294967295U",
+        "line": 298
+      },
+      {
+        "name": "__UINT_FAST32_FMTo__",
+        "definition": "\"o\"",
+        "line": 299
+      },
+      {
+        "name": "__UINT_FAST32_FMTu__",
+        "definition": "\"u\"",
+        "line": 300
+      },
+      {
+        "name": "__UINT_FAST32_FMTx__",
+        "definition": "\"x\"",
+        "line": 301
+      },
+      {
+        "name": "__UINT_FAST32_FMTX__",
+        "definition": "\"X\"",
+        "line": 302
+      },
+      {
+        "name": "__INT_FAST64_TYPE__",
+        "definition": "long long int",
+        "line": 303
+      },
+      {
+        "name": "__INT_FAST64_MAX__",
+        "definition": "9223372036854775807LL",
+        "line": 304
+      },
+      {
+        "name": "__INT_FAST64_WIDTH__",
+        "definition": "64",
+        "line": 305
+      },
+      {
+        "name": "__INT_FAST64_FMTd__",
+        "definition": "\"lld\"",
+        "line": 306
+      },
+      {
+        "name": "__INT_FAST64_FMTi__",
+        "definition": "\"lli\"",
+        "line": 307
+      },
+      {
+        "name": "__UINT_FAST64_TYPE__",
+        "definition": "long long unsigned int",
+        "line": 308
+      },
+      {
+        "name": "__UINT_FAST64_MAX__",
+        "definition": "18446744073709551615ULL",
+        "line": 309
+      },
+      {
+        "name": "__UINT_FAST64_FMTo__",
+        "definition": "\"llo\"",
+        "line": 310
+      },
+      {
+        "name": "__UINT_FAST64_FMTu__",
+        "definition": "\"llu\"",
+        "line": 311
+      },
+      {
+        "name": "__UINT_FAST64_FMTx__",
+        "definition": "\"llx\"",
+        "line": 312
+      },
+      {
+        "name": "__UINT_FAST64_FMTX__",
+        "definition": "\"llX\"",
+        "line": 313
+      },
+      {
+        "name": "__USER_LABEL_PREFIX__",
+        "definition": "",
+        "line": 314
+      },
+      {
+        "name": "__FINITE_MATH_ONLY__",
+        "definition": "0",
+        "line": 315
+      },
+      {
+        "name": "__CLANG_ATOMIC_BOOL_LOCK_FREE",
+        "definition": "2",
+        "line": 316
+      },
+      {
+        "name": "__CLANG_ATOMIC_CHAR_LOCK_FREE",
+        "definition": "2",
+        "line": 317
+      },
+      {
+        "name": "__CLANG_ATOMIC_CHAR16_T_LOCK_FREE",
+        "definition": "2",
+        "line": 318
+      },
+      {
+        "name": "__CLANG_ATOMIC_CHAR32_T_LOCK_FREE",
+        "definition": "2",
+        "line": 319
+      },
+      {
+        "name": "__CLANG_ATOMIC_WCHAR_T_LOCK_FREE",
+        "definition": "2",
+        "line": 320
+      },
+      {
+        "name": "__CLANG_ATOMIC_SHORT_LOCK_FREE",
+        "definition": "2",
+        "line": 321
+      },
+      {
+        "name": "__CLANG_ATOMIC_INT_LOCK_FREE",
+        "definition": "2",
+        "line": 322
+      },
+      {
+        "name": "__CLANG_ATOMIC_LONG_LOCK_FREE",
+        "definition": "2",
+        "line": 323
+      },
+      {
+        "name": "__CLANG_ATOMIC_LLONG_LOCK_FREE",
+        "definition": "2",
+        "line": 324
+      },
+      {
+        "name": "__CLANG_ATOMIC_POINTER_LOCK_FREE",
+        "definition": "2",
+        "line": 325
+      },
+      {
+        "name": "__NO_INLINE__",
+        "definition": "1",
+        "line": 326
+      },
+      {
+        "name": "__PIC__",
+        "definition": "2",
+        "line": 327
+      },
+      {
+        "name": "__pic__",
+        "definition": "2",
+        "line": 328
+      },
+      {
+        "name": "__FLT_RADIX__",
+        "definition": "2",
+        "line": 329
+      },
+      {
+        "name": "__DECIMAL_DIG__",
+        "definition": "__LDBL_DECIMAL_DIG__",
+        "line": 330
+      },
+      {
+        "name": "__GCC_ASM_FLAG_OUTPUTS__",
+        "definition": "1",
+        "line": 331
+      },
+      {
+        "name": "__code_model_small__",
+        "definition": "1",
+        "line": 332
+      },
+      {
+        "name": "__amd64__",
+        "definition": "1",
+        "line": 333
+      },
+      {
+        "name": "__amd64",
+        "definition": "1",
+        "line": 334
+      },
+      {
+        "name": "__x86_64",
+        "definition": "1",
+        "line": 335
+      },
+      {
+        "name": "__x86_64__",
+        "definition": "1",
+        "line": 336
+      },
+      {
+        "name": "__SEG_GS",
+        "definition": "1",
+        "line": 337
+      },
+      {
+        "name": "__SEG_FS",
+        "definition": "1",
+        "line": 338
+      },
+      {
+        "name": "__seg_gs",
+        "definition": "__attribute__ ( ( address_space ( 256 ) ) )",
+        "line": 339
+      },
+      {
+        "name": "__seg_fs",
+        "definition": "__attribute__ ( ( address_space ( 257 ) ) )",
+        "line": 340
+      },
+      {
+        "name": "__k8",
+        "definition": "1",
+        "line": 341
+      },
+      {
+        "name": "__k8__",
+        "definition": "1",
+        "line": 342
+      },
+      {
+        "name": "__tune_k8__",
+        "definition": "1",
+        "line": 343
+      },
+      {
+        "name": "__REGISTER_PREFIX__",
+        "definition": "",
+        "line": 344
+      },
+      {
+        "name": "__NO_MATH_INLINES",
+        "definition": "1",
+        "line": 345
+      },
+      {
+        "name": "__FXSR__",
+        "definition": "1",
+        "line": 346
+      },
+      {
+        "name": "__SSE2__",
+        "definition": "1",
+        "line": 347
+      },
+      {
+        "name": "__SSE2_MATH__",
+        "definition": "1",
+        "line": 348
+      },
+      {
+        "name": "__SSE__",
+        "definition": "1",
+        "line": 349
+      },
+      {
+        "name": "__SSE_MATH__",
+        "definition": "1",
+        "line": 350
+      },
+      {
+        "name": "__MMX__",
+        "definition": "1",
+        "line": 351
+      },
+      {
+        "name": "__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1",
+        "definition": "1",
+        "line": 352
+      },
+      {
+        "name": "__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2",
+        "definition": "1",
+        "line": 353
+      },
+      {
+        "name": "__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4",
+        "definition": "1",
+        "line": 354
+      },
+      {
+        "name": "__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8",
+        "definition": "1",
+        "line": 355
+      },
+      {
+        "name": "_WIN32",
+        "definition": "1",
+        "line": 356
+      },
+      {
+        "name": "_WIN64",
+        "definition": "1",
+        "line": 357
+      },
+      {
+        "name": "_M_FP_CONTRACT",
+        "definition": "1",
+        "line": 358
+      },
+      {
+        "name": "_M_FP_PRECISE",
+        "definition": "1",
+        "line": 359
+      },
+      {
+        "name": "_MSC_VER",
+        "definition": "1933",
+        "line": 360
+      },
+      {
+        "name": "_MSC_FULL_VER",
+        "definition": "193300000",
+        "line": 361
+      },
+      {
+        "name": "_MSC_BUILD",
+        "definition": "1",
+        "line": 362
+      },
+      {
+        "name": "_MSVC_CONSTEXPR_ATTRIBUTE",
+        "definition": "1",
+        "line": 363
+      },
+      {
+        "name": "_MSC_EXTENSIONS",
+        "definition": "1",
+        "line": 364
+      },
+      {
+        "name": "_ISO_VOLATILE",
+        "definition": "1",
+        "line": 365
+      },
+      {
+        "name": "_INTEGRAL_MAX_BITS",
+        "definition": "64",
+        "line": 366
+      },
+      {
+        "name": "__STDC_NO_THREADS__",
+        "definition": "1",
+        "line": 367
+      },
+      {
+        "name": "_MSVC_EXECUTION_CHARACTER_SET",
+        "definition": "65001",
+        "line": 368
+      },
+      {
+        "name": "_M_X64",
+        "definition": "100",
+        "line": 369
+      },
+      {
+        "name": "_M_AMD64",
+        "definition": "100",
+        "line": 370
+      },
+      {
+        "name": "__STDC_HOSTED__",
+        "definition": "1",
+        "line": 371
+      },
+      {
+        "name": "__STDC_VERSION__",
+        "definition": "199901L",
+        "line": 372
+      },
+      {
+        "name": "__STDC_UTF_16__",
+        "definition": "1",
+        "line": 373
+      },
+      {
+        "name": "__STDC_UTF_32__",
+        "definition": "1",
+        "line": 374
+      }
+    ],
+    "typedefs": [],
+    "structs": [],
+    "enums": [],
+    "parse_errors": [
+      "Line 319: '/*' within block comment",
+      "Line 322: '/*' within block comment",
+      "Line 429: 'errno.h' file not found"
+    ],
+    "file_hash": "a6fae498b66a37c1de384f933d4101b1",
+    "parse_time": "2025-07-30T16:32:54.822048"
+  },
+  "functions": [
+    {
+      "name": "Multi_Extern_Different_Type_1",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 436,
+      "end_line": 439,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [],
+      "called_functions": [],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 438,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [],
+      "complexity_score": 1,
+      "body_content": "void Multi_Extern_Different_Type_1 (void)\n{\n    extern int32_t n;                                       // expect: 1510\n}"
+    },
+    {
+      "name": "Multi_Extern_Different_Type_2",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 441,
+      "end_line": 444,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [],
+      "called_functions": [],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "n",
+          "var_type": "int",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 443,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [],
+      "complexity_score": 1,
+      "body_content": "void Multi_Extern_Different_Type_2 (void)\n{\n    extern int n;                                           // expect: 0626  1510\n}"
+    },
+    {
+      "name": "Overflow_In_Signed_Arithmetic_Operation",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 446,
+      "end_line": 490,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "n",
+        "x",
+        "mc25cm_n",
+        "i",
+        "scanf"
+      ],
+      "called_functions": [
+        "scanf"
+      ],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 449,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 453,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 454,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 461,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 462,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 473,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 474,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "i",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 475,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "x",
+          "var_type": "int",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 486,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 461,
+          "scope": "global",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 473,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 3,
+      "body_content": "void Overflow_In_Signed_Arithmetic_Operation (void)\n{\n  {\n    int32_t x = 40000000 * 40000000;                        // expect: 2800\n  }\n\n  {\n    int32_t n;\n    int32_t x;\n\n    n = 1000000000;\n    x = n * 4;                                              // expect: 2801\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t x = 2;\n\n    if (mc25cm_n > 0)\n    {\n      x = 4;\n    }\n\n    x = 1000000000 * x;                                     // expect: 2802\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t x = 4;\n    int32_t i;\n\n    for (i = 0; i < mc25cm_n; ++i)\n    {\n      x = 2;\n    }\n\n    x = 1000000000 * x;                                     // expect: 2803\n  }\n\n  {\n    int x;\n    scanf (\"%d\", & x);\n    ++ x;                                                   // expect: 2804\n  }\n}"
+    },
+    {
+      "name": "Dereference_Of_Null_Pointer",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 492,
+      "end_line": 524,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "x",
+        "mc25cm_n",
+        "v",
+        "i"
+      ],
+      "called_functions": [],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "x",
+          "var_type": "int *",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 499,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 504,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "v",
+          "var_type": "int",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 505,
+          "scope": "local",
+          "initial_value": "0"
+        },
+        {
+          "name": "x",
+          "var_type": "int *",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 506,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 515,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "v",
+          "var_type": "int",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 516,
+          "scope": "local",
+          "initial_value": "0"
+        },
+        {
+          "name": "x",
+          "var_type": "int *",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 517,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "i",
+          "var_type": "int",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 518,
+          "scope": "local",
+          "initial_value": "0"
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 504,
+          "scope": "global",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 515,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 3,
+      "body_content": "void Dereference_Of_Null_Pointer (void)\n{\n  {\n    * (int *) 0 = 0;                                        // expect: 2810\n  }\n\n  {\n    int * x = NULL;\n    * x = 0;                                                // expect: 2811\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int v = 0;\n    int * x = NULL;\n    if (mc25cm_n > 0)\n    {\n      x = & v;\n    }\n    * x = 0;                                                // expect: 2812\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int v = 0;\n    int * x = NULL;\n    for (int i = 0; i < mc25cm_n; ++ i)\n    {\n      x = & v;\n    }\n    * x = 0;                                                // expect: 2813\n  }\n}"
+    },
+    {
+      "name": "Arithmetic_Operation_On_Null_Pointer",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 526,
+      "end_line": 563,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "p",
+        "i",
+        "mc25cm_n",
+        "v"
+      ],
+      "called_functions": [],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "p",
+          "var_type": "int32_t *",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 529,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "p",
+          "var_type": "int32_t *",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 535,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "p",
+          "var_type": "int32_t *",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 541,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 551,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "i",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 552,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "v",
+          "var_type": "int32_t[2]",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 553,
+          "scope": "local",
+          "initial_value": "2"
+        },
+        {
+          "name": "p",
+          "var_type": "int32_t *",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 554,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "p",
+          "var_type": "int32_t *",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 541,
+          "scope": "global",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 551,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 3,
+      "body_content": "void Arithmetic_Operation_On_Null_Pointer (void)\n{\n  {\n    int32_t * p;\n\n    p = (int32_t *) NULL + 1 ;                              // expect: 2820\n  }\n\n  {\n    int32_t * p = NULL;\n\n    ++ p;                                                   // expect: 2821\n  }\n\n  {\n    extern int32_t * p;                                     // expect: 1510\n\n    if (p == NULL)\n    {\n    }\n\n    ++ p;                                                   // expect: 2822\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t i;\n    int32_t v [2];\n    int32_t * p = NULL;\n\n    for (i = 0; i < mc25cm_n; ++ i)\n    {\n      p = v;\n    }\n\n    p++;                                                    // expect: 2823\n  }\n}"
+    },
+    {
+      "name": "division_by_zero_1",
+      "return_type": "void",
+      "parameters": [
+        {
+          "name": "x",
+          "type": "int32_t",
+          "line": 565
+        },
+        {
+          "name": "n",
+          "type": "int32_t",
+          "line": 565
+        }
+      ],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": false,
+      "start_line": 565,
+      "end_line": 573,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "n",
+        "r",
+        "x"
+      ],
+      "called_functions": [],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": false,
+          "is_parameter": true,
+          "line_number": 565,
+          "scope": "parameter",
+          "initial_value": null
+        },
+        {
+          "name": "n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": false,
+          "is_parameter": true,
+          "line_number": 565,
+          "scope": "parameter",
+          "initial_value": null
+        },
+        {
+          "name": "r",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 567,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [],
+      "complexity_score": 2,
+      "body_content": "void division_by_zero_1( int32_t x, int32_t n )\n{\n  int32_t r;\n\n  if ( n == 0 )\n  {\n    r = x / n;                                              // expect:2831\n  }\n}"
+    },
+    {
+      "name": "Division_By_Zero",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 575,
+      "end_line": 612,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "x",
+        "y",
+        "i",
+        "mc25cm_n",
+        "r"
+      ],
+      "called_functions": [],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 582,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "y",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 583,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 590,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 600,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "r",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 601,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "i",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 602,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 603,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 590,
+          "scope": "global",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 600,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 3,
+      "body_content": "void Division_By_Zero (void)\n{\n  {\n    1000 / 0;                                               // expect: 2830\n  }\n\n  {\n    int32_t x;\n    int32_t y;\n\n    x = 0;\n    y = 10 / x;                                             // expect: 2831\n  }\n\n  {\n    extern int32_t x;                                       // expect: 1510\n\n    if (x == 0)\n    {\n    }\n\n    1000 / x;                                               // expect: 2832\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t r;\n    int32_t i;\n    int32_t x = 0;\n\n    for ( i = 0; i < mc25cm_n; ++i )\n    {\n      x = x + i;\n    }\n\n    r = 10 / x;                                             // expect: 2833\n  }\n}"
+    },
+    {
+      "name": "Dereference_Of_An_Invalid_Pointer_Value",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 614,
+      "end_line": 658,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "x",
+        "v",
+        "n",
+        "mc25cm_n",
+        "i"
+      ],
+      "called_functions": [],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "v",
+          "var_type": "int32_t[8]",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 617,
+          "scope": "local",
+          "initial_value": "8"
+        },
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 618,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 628,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "v",
+          "var_type": "int32_t[8]",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 629,
+          "scope": "local",
+          "initial_value": "8"
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 635,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "v",
+          "var_type": "int32_t[8]",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 636,
+          "scope": "local",
+          "initial_value": "8"
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 646,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "v",
+          "var_type": "int32_t[8]",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 647,
+          "scope": "local",
+          "initial_value": "8"
+        },
+        {
+          "name": "i",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 648,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "x",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 649,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 635,
+          "scope": "global",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 646,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 3,
+      "body_content": "void Dereference_Of_An_Invalid_Pointer_Value (void)\n{\n  {\n    int32_t v [8] = { 0 };\n    int32_t x;\n\n    x = v [8];                                              // expect: 2840\n\n    v [8] = 0;                                              // expect: 2840\n\n    * (v + 8) = 0;                                          // expect: 2840\n  }\n\n  {\n    int32_t n = 8;\n    int32_t v [8];\n\n    v [n] = 1;                                              // expect: 2841\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t v [8];\n\n    if (mc25cm_n == 8)\n    {\n    }\n\n    v [mc25cm_n] = 1;                                         // expect: 2842\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int32_t v [8];\n    int32_t i;\n    int32_t x = 8;\n\n    for (i = 0; i < mc25cm_n; ++ i)\n    {\n      -- x;\n    }\n\n    v [x] = 1;                                              // expect: 2843\n  }\n}"
+    },
+    {
+      "name": "Wide_Character_Types",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 660,
+      "end_line": 689,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "iswalpha",
+        "mc25cm_n",
+        "c",
+        "iswalnum",
+        "iswupper"
+      ],
+      "called_functions": [
+        "iswalpha",
+        "iswalnum",
+        "iswupper"
+      ],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 667,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "c",
+          "var_type": "int",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 668,
+          "scope": "local",
+          "initial_value": "'c'"
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 679,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "c",
+          "var_type": "int",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 680,
+          "scope": "local",
+          "initial_value": "666"
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 667,
+          "scope": "global",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 679,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 3,
+      "body_content": "void Wide_Character_Types (void)\n{\n  {\n    iswalpha (666);                                         // expect: 2806\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int c = 'c';\n\n    if (mc25cm_n > 0)\n    {\n      c += 666;\n    }\n\n    iswalnum (c);                                           // expect: 2807\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    int c = 666;\n\n    while (-- mc25cm_n > 0)\n    {\n      c -= 8;\n    }\n\n    iswupper (c);                                           // expect: 2808\n  }\n}"
+    },
+    {
+      "name": "Use_of_Uninitialised_Resource",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 691,
+      "end_line": 729,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "pthread_mutex_lock",
+        "mutex",
+        "pthread_mutex_unlock",
+        "mc25cm_n",
+        "pthread_mutex_init",
+        "m",
+        "pthread_mutex_destroy"
+      ],
+      "called_functions": [
+        "pthread_mutex_lock",
+        "pthread_mutex_unlock",
+        "pthread_mutex_init",
+        "pthread_mutex_destroy"
+      ],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "mutex",
+          "var_type": "pthread_mutex_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 694,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 701,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mutex",
+          "var_type": "pthread_mutex_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 702,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 714,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mutex",
+          "var_type": "pthread_mutex_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 715,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "m",
+          "var_type": "pthread_mutex_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 721,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 701,
+          "scope": "global",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 714,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 3,
+      "body_content": "void Use_of_Uninitialised_Resource (void)                   // expect: 1509\n{\n  {\n    pthread_mutex_t  mutex;\n\n    pthread_mutex_lock (& mutex);                           // expect: 2726\n    pthread_mutex_unlock (& mutex);                         // expect: 2726\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    pthread_mutex_t  mutex;\n\n    if (mc25cm_n > 0)\n    {\n      pthread_mutex_init (& mutex, NULL);\n    }\n\n    pthread_mutex_lock (& mutex);                           // expect: 2727\n    pthread_mutex_unlock (& mutex);                         // expect: 2727\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    pthread_mutex_t  mutex;\n\n    pthread_mutex_init (& mutex, 0);\n\n    while (--mc25cm_n)\n    {\n      pthread_mutex_t m;\n      mutex = m;\n    }\n\n    pthread_mutex_lock (& mutex);                           // expect: 2728\n    pthread_mutex_unlock (& mutex);                         // expect: 2728\n    pthread_mutex_destroy (& mutex);                        // expect: 2728\n  }\n}"
+    },
+    {
+      "name": "Use_of_Destroyed_Resource",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 731,
+      "end_line": 772,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "pthread_mutex_init",
+        "mutex",
+        "pthread_mutex_destroy",
+        "pthread_mutex_lock",
+        "pthread_mutex_unlock",
+        "mc25cm_n"
+      ],
+      "called_functions": [
+        "pthread_mutex_init",
+        "pthread_mutex_destroy",
+        "pthread_mutex_lock",
+        "pthread_mutex_unlock"
+      ],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "mutex",
+          "var_type": "pthread_mutex_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 734,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 743,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mutex",
+          "var_type": "pthread_mutex_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 744,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 759,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mutex",
+          "var_type": "pthread_mutex_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 760,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 743,
+          "scope": "global",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 759,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 3,
+      "body_content": "void Use_of_Destroyed_Resource (void)                       // expect: 1509\n{\n  {\n    pthread_mutex_t mutex;\n\n    pthread_mutex_init (& mutex, 0);\n    pthread_mutex_destroy (& mutex);\n    pthread_mutex_lock (& mutex);                           // expect: 2731\n    pthread_mutex_unlock (& mutex);                         // expect: 2731\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    pthread_mutex_t  mutex;\n\n    pthread_mutex_init (& mutex, 0);\n\n    if (mc25cm_n > 0)\n    {\n      pthread_mutex_destroy (& mutex);\n    }\n\n    pthread_mutex_lock (& mutex);                           // expect: 2732\n    pthread_mutex_unlock (& mutex);                         // expect: 2732\n  }\n\n\n  {\n    extern int32_t mc25cm_n;\n    pthread_mutex_t  mutex;\n\n    pthread_mutex_init (& mutex, 0);\n\n    while (-- mc25cm_n > 0)\n    {\n      pthread_mutex_destroy (& mutex);                      // expect: 2733\n    }\n\n    pthread_mutex_lock (& mutex);                           // expect: 2733\n    pthread_mutex_unlock (& mutex);                         // expect: 2733\n  }\n}"
+    },
+    {
+      "name": "Use_of_Uninitialised_File_Handle",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 774,
+      "end_line": 813,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "mc25cm_n"
+      ],
+      "called_functions": [],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 783,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 799,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 783,
+          "scope": "global",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 799,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 3,
+      "body_content": "void Use_of_Uninitialised_File_Handle (void)                // expect: 1509\n{\n  {\n    FILE * f;\n    fprintf (f, \"hello\");                                   // expect: 2746\n    fclose (f);                                             // expect: 2746\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    FILE *      f;\n    FILE *      g;\n\n    f = fopen (\"my_file.txt\", \"w\");\n\n    if (mc25cm_n > 0)\n    {\n      f = g;\n    }\n\n    fprintf (f, \"hello\");                                   // expect: 2747\n    fclose (f);                                             // expect: 2747\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    FILE *      f;\n    FILE *      g;\n\n    f = fopen (\"my_file.txt\", \"w\");\n\n    while (-- mc25cm_n > 0)\n    {\n      f = g;\n    }\n\n    fprintf (f, \"hello\");                                   // expect: 2748\n    fclose (f);                                             // expect: 2748\n  }\n}"
+    },
+    {
+      "name": "Use_of_freed_memory",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 815,
+      "end_line": 846,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "malloc",
+        "buf",
+        "free",
+        "strcat",
+        "mc25cm_n"
+      ],
+      "called_functions": [
+        "malloc",
+        "free",
+        "strcat"
+      ],
+      "has_return_statement": true,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "buf",
+          "var_type": "char *",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 818,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 831,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "buf",
+          "var_type": "char *",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 832,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "mc25cm_n",
+          "var_type": "int32_t",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 831,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 4,
+      "body_content": "void Use_of_freed_memory ()                                 // expect: 1509\n{\n  {\n    char *buf = (char *)malloc(32);\n\n    if (!buf)\n      return;\n\n    free(buf);\n\n    buf[0];                                                 // expect: 4866\n\n    strcat(buf, \"abc\");                                     // expect: 4866\n  }\n\n  {\n    extern int32_t mc25cm_n;\n    char *buf = (char *)malloc(32);\n\n    if (!buf)\n      return;\n\n    if( mc25cm_n == 0 )\n    {\n      free(buf);\n    }\n\n    buf[0];                                                 // expect: 4867\n\n    strcat(buf, \"abc\");                                     // expect: 4867\n  }\n}"
+    },
+    {
+      "name": "Invalid_Thread_Id",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 848,
+      "end_line": 871,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "pthread_cancel",
+        "tid",
+        "Invalid_x",
+        "pthread_create",
+        "Invalid_thread",
+        "Invalid_y"
+      ],
+      "called_functions": [
+        "pthread_cancel",
+        "pthread_create"
+      ],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "tid",
+          "var_type": "pthread_t",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 852,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "",
+          "var_type": "void *",
+          "is_global": false,
+          "is_local": false,
+          "is_parameter": true,
+          "line_number": 855,
+          "scope": "parameter",
+          "initial_value": null
+        },
+        {
+          "name": "Invalid_x",
+          "var_type": "int",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 857,
+          "scope": "local",
+          "initial_value": null
+        },
+        {
+          "name": "Invalid_y",
+          "var_type": "int",
+          "is_global": false,
+          "is_local": true,
+          "is_parameter": false,
+          "line_number": 865,
+          "scope": "local",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [
+        {
+          "name": "Invalid_x",
+          "var_type": "int",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 857,
+          "scope": "global",
+          "initial_value": null
+        },
+        {
+          "name": "Invalid_y",
+          "var_type": "int",
+          "is_global": true,
+          "is_local": false,
+          "is_parameter": false,
+          "line_number": 865,
+          "scope": "global",
+          "initial_value": null
+        }
+      ],
+      "complexity_score": 3,
+      "body_content": "void Invalid_Thread_Id (void)\n{\n  pthread_cancel (0);                                       // expect: 4995\n\n  pthread_t tid = 0;\n  pthread_cancel (tid);                                     // expect: 4996\n\n  extern void * Invalid_thread (void *);\n\n  extern int Invalid_x;\n  if (Invalid_x != 0)\n  {\n    pthread_create (&tid, NULL, &Invalid_thread, NULL);\n  }\n  pthread_cancel (tid);                                     // expect: 4997\n\n  pthread_create (&tid, NULL, &Invalid_thread, NULL);\n  extern int Invalid_y;\n  while (Invalid_y --)\n  {\n    tid = 0;\n  }\n  pthread_cancel (tid);                                     // expect: 4998\n}"
+    },
+    {
+      "name": "Invalid_thread",
+      "return_type": "void *",
+      "parameters": [
+        {
+          "name": "unnamed",
+          "type": "void *",
+          "line": 855
+        }
+      ],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 855,
+      "end_line": 855,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [],
+      "called_functions": [],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [
+        {
+          "name": "",
+          "var_type": "void *",
+          "is_global": false,
+          "is_local": false,
+          "is_parameter": true,
+          "line_number": 855,
+          "scope": "parameter",
+          "initial_value": null
+        }
+      ],
+      "global_variables": [],
+      "complexity_score": 1,
+      "body_content": "  extern void * Invalid_thread (void *);"
+    },
+    {
+      "name": "Others",
+      "return_type": "void",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": false,
+      "start_line": 873,
+      "end_line": 876,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "printf"
+      ],
+      "called_functions": [
+        "printf"
+      ],
+      "has_return_statement": false,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [],
+      "global_variables": [],
+      "complexity_score": 1,
+      "body_content": "void Others (void)\n{\n  (void) printf (\"%e\", 0);                                  // expect: 0179\n}"
+    },
+    {
+      "name": "rule_0103",
+      "return_type": "int16_t",
+      "parameters": [],
+      "is_static": false,
+      "is_inline": false,
+      "is_extern": true,
+      "start_line": 878,
+      "end_line": 894,
+      "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Rule-1.3.c",
+      "dependencies": [
+        "Overflow_In_Signed_Arithmetic_Operation",
+        "Dereference_Of_Null_Pointer",
+        "Arithmetic_Operation_On_Null_Pointer",
+        "Division_By_Zero",
+        "Dereference_Of_An_Invalid_Pointer_Value",
+        "Wide_Character_Types",
+        "Use_of_Uninitialised_Resource",
+        "Use_of_Destroyed_Resource",
+        "Use_of_Uninitialised_File_Handle",
+        "Use_of_freed_memory",
+        "Invalid_Thread_Id",
+        "Others"
+      ],
+      "called_functions": [
+        "Overflow_In_Signed_Arithmetic_Operation",
+        "Dereference_Of_Null_Pointer",
+        "Arithmetic_Operation_On_Null_Pointer",
+        "Division_By_Zero",
+        "Dereference_Of_An_Invalid_Pointer_Value",
+        "Wide_Character_Types",
+        "Use_of_Uninitialised_Resource",
+        "Use_of_Destroyed_Resource",
+        "Use_of_Uninitialised_File_Handle",
+        "Use_of_freed_memory",
+        "Invalid_Thread_Id",
+        "Others"
+      ],
+      "has_return_statement": true,
+      "return_value_type": null,
+      "comment": null,
+      "local_variables": [],
+      "global_variables": [],
+      "complexity_score": 1,
+      "body_content": "extern int16_t rule_0103 (void)\n{\n  Overflow_In_Signed_Arithmetic_Operation ();\n  Dereference_Of_Null_Pointer ();\n  Arithmetic_Operation_On_Null_Pointer ();\n  Division_By_Zero ();\n  Dereference_Of_An_Invalid_Pointer_Value ();\n  Wide_Character_Types ();\n  Use_of_Uninitialised_Resource ();\n  Use_of_Destroyed_Resource ();\n  Use_of_Uninitialised_File_Handle ();\n  Use_of_freed_memory ();\n  Invalid_Thread_Id ();\n  Others ();\n\n  return 0;\n}"
+    }
+  ],
+  "statistics": {
+    "total_functions": 17,
+    "total_variables": 67,
+    "total_lines": 894,
+    "has_errors": true
+  }
+}

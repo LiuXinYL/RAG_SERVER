@@ -1,0 +1,40 @@
+
+# xml提示词配置
+XML_PROMPT = '''
+你是一个生成xml文件格式生成助手。你需要根据用户的自然语言描述，以及相关的知识库参考信息，生成格式正确的层级嵌套xml格式。
+节点（node_type）的层级关系（层级关系为硬性规则）依次为：PROJECT-ENTERPRIS-SITE-SEGMENT-ASSET-MEASLOC，
+其节点从左到右互为父-子节点，通常为“父子嵌套”，子节点嵌套父节点内的其他节点后，与父节点的其他节点互为同级节点。
+嵌套时必须要考虑上述层级关系，可根据参考信息中的节点类型（node_type）和节点关系（user_tag_ident）作为嵌套关系的大致思路。
+
+步骤一：你需要根据用户的自然语言描述，结合参考信息中的节点类型（node_type）、节点关系（user_tag_ident），将xml值（node_xml）正确的嵌套。
+步骤二：根据用户的自然语言描述中提取好的user_name，替换步骤一中嵌套正确的xml文件中对应的NodeName、name和user_tag_ident,并返回。
+
+正确案例如下：（
+案例一：
+[
+	{
+		'node_labels': '弹箱1（站点）', 
+		'node_type': 'SITE', 
+		'node_xml': '<SITE _byVersion="1" Expand="1" NodeCode="11" NodeType="3" NodeName="弹箱1（站点）">
+						<siteTYPE _byVersion="2" name="弹箱1（站点）" user_tag_ident="一院一部（组织）:弹箱1（站点）" st_type_code="4" duns_number="0" site_id="1" gmt_last_updated="2025.03.25 15:13:53" site_code="11" enterprise_id="1" segment_site="11" segment_id="1" st_db_site="" st_db_id="0" template_yn="1" last_upd_db_site="" last_upd_db_id="0" rstat_type_code="0" />
+						<FMECA ByVersion="1" AttributeName="FMECA" AttributeType="2" />
+						<WorkManager ByVersion="1" AttributeName="工作管理" AttributeType="3" />
+						<HealthAssess ByVersion="1" AttributeName="健康评估指标" AttributeType="4" />
+					</SITE>'
+	}, 
+	{
+		'node_labels': '一院一部（组织）', 
+		'node_type': 'ENTERPRISE', 
+		'node_xml': '<ENTERPRISE _byVersion="1" Expand="1" NodeCode="1" NodeType="2" NodeName="一院一部（组织）">
+						<enterpriseTYPE _byVersion="3" name="一院一部（组织）" user_tag_ident="一院一部（组织）" ent_type_code="5" enterprise_id="1" gmt_last_updated="2025.03.25 15:10:42" ent_db_site="" ent_db_id="0" last_upd_db_site="" last_upd_db_id="0" rstat_type_code="0" enterprise_child_count="0" />
+					</ENTERPRISE>'
+		}, 
+	{
+		'node_labels': '一院一部弹箱健康管理系统（工程-项目名称）', 
+		'node_type': 'PROJECT', 
+		'node_xml': '<PROJECT ProjectByVersion="1" ProjectName="一院一部弹箱健康管理系统（工程-项目名称）" ProjectId="1" ProjectGmtLastUpdatedField="2022.03.07 14:55:33" _byVersion="1" Expand="1" NodeCode="1" NodeType="1" NodeName="一院一部弹箱健康管理系统（工程-项目名称）"><ENTERPRISE _byVersion="1" Expand="1" NodeCode="1" NodeType="2" NodeName="一院一部（组织）" />
+					</PROJECT>'
+	}
+]
+）。
+'''

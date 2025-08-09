@@ -1,0 +1,55 @@
+{
+  "file_info": {
+    "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Dir-1.1-C11.c",
+    "file_name": "MC25CM_Dir-1.1-C11.c",
+    "total_lines": 531,
+    "functions": [],
+    "global_variables": [],
+    "includes": [
+      "MC25CM_Dir-1.1-C99-C11-0380.h\"                     /* expect:  0380 */",
+      "MC25CM_Dir-1.1-C99-C11-0388.h"
+    ],
+    "defines": [
+      {
+        "name": "quite_unnecessarily_long_identifier_for_the_purposes_of_demonstration",
+        "definition": "1",
+        "line": 502
+      },
+      {
+        "name": "c2345678901234567890123456789012345678901234567890123456789012x",
+        "definition": "1",
+        "line": 514
+      },
+      {
+        "name": "c2345678901234567890123456789012345678901234567890123456789012y",
+        "definition": "2   /* expect: !0793 */",
+        "line": 515
+      },
+      {
+        "name": "d23456789012345678901234567890123456789012345678901234567890123x",
+        "definition": "3",
+        "line": 517
+      },
+      {
+        "name": "d234567890123456789012345678901234567890123456789012345678901231y",
+        "definition": "4   /* expect:  0793 */",
+        "line": 518
+      }
+    ],
+    "typedefs": [],
+    "structs": [],
+    "enums": [],
+    "parse_errors": [
+      "使用简化解析模式"
+    ],
+    "file_hash": "0ba279fef9357574067f04338532c53d",
+    "parse_time": "2025-07-30T16:32:54.214458"
+  },
+  "functions": [],
+  "statistics": {
+    "total_functions": 0,
+    "total_variables": 0,
+    "total_lines": 531,
+    "has_errors": true
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "file_info": {
+    "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Dir-1.1.c",
+    "file_name": "MC25CM_Dir-1.1.c",
+    "total_lines": 450,
+    "functions": [],
+    "global_variables": [],
+    "includes": [
+      "stdio.h",
+      "misra.h",
+      "mc25cmex.h"
+    ],
+    "defines": [
+      {
+        "name": "M1",
+        "definition": "@                                                          /* expect:  0289             */",
+        "line": 296
+      },
+      {
+        "name": "F1034(x,",
+        "definition": "args...)                                             /* expect:  1034              */",
+        "line": 421
+      },
+      {
+        "name": "DIR_0101_MAC1(NAME,",
+        "definition": "...)  \\",
+        "line": 441
+      }
+    ],
+    "typedefs": [],
+    "structs": [],
+    "enums": [],
+    "parse_errors": [
+      "使用简化解析模式"
+    ],
+    "file_hash": "8a08861f0fa33c29844c0e996fb5a0dc",
+    "parse_time": "2025-07-30T16:32:54.222192"
+  },
+  "functions": [],
+  "statistics": {
+    "total_functions": 0,
+    "total_variables": 0,
+    "total_lines": 450,
+    "has_errors": true
+  }
+}

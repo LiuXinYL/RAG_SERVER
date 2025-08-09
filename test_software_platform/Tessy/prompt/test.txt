@@ -1,0 +1,333 @@
+
+我需要写一个单元测试的任务系统。Tessy/code文件夹是存放数据的文件夹，code下的每一个文件夹都算是一组c代码测试数据，每一组中可能会包含c文件和h文件，
+测试的侧重点是函数的if分支、switch分支，且测试用例的覆盖率尽可能达到90%以上。
+第一步：用enhanced_c_oarser.py去解析每组文件夹下的c文件和h文件，以函数的角度得到函数的相关信息，
+比如函数名称、函数类型、形参名称、形参类型、分支信息、函数体信息、返回值、返回值类型等，将结果以json格式保存到Tessy/code_info_json文件夹下。
+第二步：读取excel中的文件信息，得到Properties(sheet页面)和Values(sheet页面)中的信息，其中Properties(sheet页面)的Description字段为测试用例的构建思路；
+Values(sheet页面)中第一行为c函数的形参名称（function.value）,第二行为i or o,i说明了第一行的参数是输出的形参，o说明第一行的参数是输出的返回值，第一列为空，可以理解为唯一的id号。
+第三步：调用llm_init.py中的函数初始化大模型，结合第一步的函数详细信息和第三步中的Values页面信息作为测试用例的参考信息（上下文信息）。
+第四步：结合prompt_manager.py文件写出prompt提示测工程，将c函数详细信息，excel中的示例信息（上下文信息）组合。
+第五步：将上下文信息补充到prompt提示词中，调用第三步llm_inti初始化好的大模型生成多个正确可验证的测试用例，并完成覆盖率达到90%以上的要求。
+第六步：将测试用例续写到excel文件的Values(sheet页面)中。保持原有的行列信息，将测试用例的形参和返回值填写到第二行（i\o）下，并对应上第一行的形参名称；
+将测试用例的思路填写到Properties(sheet页面)的Description字段中，最后将新的excel文件保存到Tessy/result文件夹下。
+
+根据以上的信息和unit_test_generator.py重新设计prompt提示词工程。
+
+
+
+
+
+{
+  "system_prompt": 
+  "你是一个专业的C代码单元测试生成专家，专门负责生成高覆盖率的单元测试用例。
+  你的核心任务是分析C函数的if分支和switch分支，生成能够达到90%以上分支覆盖率的测试用例。
+  你具备深入的代码分析能力，能够识别关键执行路径和边界条件。",
+  
+  "branch_coverage_prompt_template": 
+  "## 🎯 高覆盖率单元测试生成
+  
+  \n\n### 📍 目标函数信息
+  \n- **函数名**: {function_name}
+  \n- **返回类型**: {return_type}
+  \n- **参数列表**: {parameters}
+  \n- **源文件**: {source_file}
+  
+  \n\n### 💻 函数代码详情
+  \n#### 函数体:
+  \n```c
+  \n{function_body}
+  \n```
+  
+  \n\n### 🔍 分支分析信息
+  \n#### 分支统计:
+  \n- **if语句数量**: {if_count}
+  \n- **switch语句数量**: {switch_count}
+  \n- **for循环数量**: {for_count}
+  \n- **while循环数量**: {while_count}
+  \n- **总分支数**: {total_branches}
+  \n- **目标覆盖率**: 90%+
+  \n- **预估测试用例数**: {estimated_test_cases}
+  
+  \n\n### 📊 参数信息
+  \n#### 输入参数 (i):
+  \n{input_parameters}
+  
+  \n\n#### 输出参数 (o):
+  \n{output_parameters}
+  
+  \n\n### 📋 测试用例构建思路
+  \n{test_case_idea}
+  
+  \n\n### 🎯 生成要求
+  \n请生成能够达到**90%以上分支覆盖率**的测试用例，重点关注：
+  
+  \n\n1. **if分支测试** - 覆盖所有if条件的不同分支
+  \n   - 条件为真时的执行路径
+  \n   - 条件为假时的执行路径
+  \n   - 复合条件的各种组合
+  
+  \n\n2. **switch分支测试** - 覆盖所有case分支
+  \n   - 每个case分支的测试
+  \n   - default分支的测试
+  \n   - 边界case值的测试
+  
+  \n\n3. **边界值测试** - 测试边界条件和临界值
+  \n   - 参数的最小值、最大值
+  \n   - 临界值附近的测试
+  \n   - 特殊值（0、-1、NULL等）
+  
+  \n\n4. **异常情况测试** - 测试错误处理路径
+  \n   - 无效输入的处理
+  \n   - 异常状态的恢复
+  \n   - 错误返回值的验证
+  
+  \n\n### 📝 输出格式要求
+  \n请以JSON格式返回测试用例，格式如下：
+  \n```json\n{{
+    \n  \"branch_coverage\": {{
+      \n    \"target_coverage\": 90,
+      \n    \"estimated_coverage\": \"预估覆盖率百分比\",
+      \n    \"critical_branches\": [\"关键分支列表\"],
+      \n    \"coverage_strategy\": \"覆盖率策略说明\"
+      \n  }},
+      \n  \"test_cases\": [
+        \n    {{
+          \n      \"test_id\": \"唯一测试ID\",
+          \n      \"test_name\": \"测试用例名称\",
+          \n      \"input_values\": {{\"参数名\": \"参数值\"}},
+          \n      \"expected_output\": \"期望输出值\",
+          \n      \"description\": \"测试描述\",
+          \n      \"branch_type\": \"if/switch/for/while\",
+          \n      \"coverage_target\": \"覆盖的具体分支\",
+          \n      \"priority\": \"high/medium/low\"
+          \n    }}
+          \n  ],
+          \n  \"coverage_analysis\": {{
+            \n    \"if_branches_covered\": \"if分支覆盖情况\",
+            \n    \"switch_branches_covered\": \"switch分支覆盖情况\",
+            \n    \"total_branches_covered\": \"总分支覆盖情况\",
+            \n    \"coverage_gaps\": [\"覆盖率缺口\"],
+            \n    \"additional_cases_needed\": \"是否需要额外测试用例\"
+            \n  }}
+            \n}}
+            \n```
+            
+            \n\n### ✅ 质量标准
+            \n- **覆盖率要求**: 确保90%以上的分支覆盖率
+            \n- **分支完整性**: 覆盖所有if和switch分支
+            \n- **边界完整性**: 包含所有边界条件测试
+            \n- **可执行性**: 生成的测试用例可以直接执行
+            \n- **可验证性**: 期望输出必须准确且可验证",
+
+
+
+  "comprehensive_branch_analysis_template": 
+  "## 🔬 综合分支覆盖率分析
+  
+  \n\n### 函数结构分析
+  \n#### 基本信息:
+  \n- **函数名**: {function_name}
+  \n- **返回类型**: {return_type}
+  \n- **参数数量**: {parameter_count}
+  \n- **代码行数**: {code_lines}
+  \n- **函数复杂度**: {complexity_score}
+  
+  \n\n#### 分支结构:
+  \n- **if语句**: {if_count} 个
+  \n- **switch语句**: {switch_count} 个
+  \n- **for循环**: {for_count} 个
+  \n- **while循环**: {while_count} 个
+  \n- **总分支数**: {total_branches}
+  
+  \n\n### 🎯 分支覆盖率分析
+  \n#### 当前覆盖率评估:
+  \n- **if分支覆盖率**: 需要达到90%+
+  \n- **switch分支覆盖率**: 需要达到90%+
+  \n- **整体分支覆盖率**: 目标90%+
+  
+  \n\n#### 关键分支识别:
+  \n{critical_branches}
+  
+  \n\n#### 覆盖率缺口分析:
+  \n{coverage_gaps}
+  
+  \n\n### 📋 测试策略制定
+  \n#### 1. if分支测试策略:
+  \n- 条件组合测试
+  \n- 边界值测试
+  \n- 异常值测试
+  
+  \n\n#### 2. switch分支测试策略:
+  \n- 每个case分支测试
+  \n- default分支测试
+  \n- 边界case值测试
+  
+  \n\n#### 3. 循环分支测试策略:
+  \n- 循环不执行
+  \n- 循环执行一次
+  \n- 循环执行多次
+  \n- 循环边界条件
+  
+  \n\n### 📝 输出格式要求
+  \n请按以下JSON格式输出分析结果和测试用例:
+  \n```json\n{{
+    \n  \"branch_analysis\": {{
+      \n    \"if_coverage_required\": \"if分支覆盖率要求\",
+      \n    \"switch_coverage_required\": \"switch分支覆盖率要求\",
+      \n    \"total_coverage_target\": \"总体覆盖率目标\",
+      \n    \"critical_if_branches\": [\"关键if分支\"],
+      \n    \"critical_switch_branches\": [\"关键switch分支\"],
+      \n    \"coverage_strategy\": \"覆盖率策略\"
+      \n  }},
+      \n  \"test_cases\": [
+        \n    {{
+          \n      \"test_id\": \"唯一测试ID\",
+          \n      \"test_name\": \"测试用例名称\",
+          \n      \"input_values\": {{\"参数名\": \"参数值\"}},
+          \n      \"expected_output\": \"期望输出值\",
+          \n      \"description\": \"测试描述\",
+          \n      \"branch_type\": \"if/switch/for/while\",
+          \n      \"coverage_target\": \"覆盖的具体分支\",
+          \n      \"priority\": \"high/medium/low\",
+          \n      \"coverage_impact\": \"覆盖率影响\"
+          \n    }}\n  ],
+          \n  \"coverage_plan\": {{
+            \n    \"estimated_coverage\": \"预估覆盖率\",
+            \n    \"coverage_gaps\": [\"覆盖率缺口\"],
+            \n    \"additional_cases_needed\": \"是否需要额外测试用例\",
+            \n    \"execution_order\": \"测试执行顺序建议\"
+            \n  }}
+            \n}}
+            \n```",
+
+  "function_parameter_analysis_template": 
+  "## 📊 函数参数分析模板
+  
+  \n\n### 参数结构分析
+  \n#### 输入参数 (i):
+  \n{input_parameters}
+  
+  \n\n#### 输出参数 (o):
+  \n{output_parameters}
+  
+  \n\n#### 参数类型分析:
+  \n{parameter_types}
+  
+  \n\n### 🎯 参数测试策略
+  \n#### 1. 输入参数测试:
+  \n- 有效值范围测试
+  \n- 边界值测试
+  \n- 无效值测试
+  \n- 特殊值测试
+  
+  \n\n#### 2. 输出参数测试:
+  \n- 返回值验证
+  \n- 输出参数状态验证
+  \n- 错误返回值验证
+  
+  \n\n### 📝 测试用例生成指导
+  \n基于参数分析，生成以下类型的测试用例：
+  
+  \n\n#### 正常值测试:
+  \n- 使用参数的有效值范围
+  \n- 验证函数的正常行为
+  
+  \n\n#### 边界值测试:
+  \n- 测试参数的最小值、最大值
+  \n- 测试临界值
+  
+  \n\n#### 异常值测试:
+  \n- 测试无效输入
+  \n- 测试NULL指针
+  \n- 测试超出范围的值
+  
+  \n\n#### 组合测试:
+  \n- 多个参数的组合测试
+  \n- 参数间的依赖关系测试",
+
+  "test_case_idea_template": 
+  "## 💡 测试用例构建思路
+  
+  \n\n### 测试目标
+  \n{test_objective}
+  
+  \n\n### 测试重点
+  \n- **分支覆盖率**: 重点关注if和switch分支
+  \n- **边界条件**: 测试所有边界值
+  \n- **异常处理**: 验证错误处理逻辑
+  \n- **功能完整性**: 确保所有功能路径被测试
+  
+  \n\n### 测试策略
+  \n#### 1. 分支覆盖策略:
+  \n- 识别所有if和switch语句
+  \n- 为每个分支设计测试用例
+  \n- 确保90%以上的覆盖率
+  
+  \n\n#### 2. 数据驱动策略:
+  \n- 基于参数类型设计测试数据
+  \n- 使用等价类划分方法
+  \n- 包含边界值和异常值
+  
+  \n\n#### 3. 场景驱动策略:
+  \n- 基于函数的使用场景
+  \n- 模拟真实调用情况
+  \n- 验证函数的实际行为
+  
+  \n\n### 预期结果
+  \n- 生成可执行的测试用例
+  \n- 达到90%以上的分支覆盖率
+  \n- 验证所有关键功能路径
+  \n- 确保测试用例的可维护性",
+
+  "rag_context_template": 
+  "## 📚 高覆盖率单元测试知识库
+  
+  \n\n### 🎯 分支覆盖率测试原则
+  \n- **if分支测试**: 覆盖所有if条件的不同分支
+  \n- **switch分支测试**: 覆盖所有case分支和default分支
+  \n- **循环分支测试**: 覆盖循环的进入、执行、退出条件
+  \n- **复合条件测试**: 测试复杂逻辑表达式的各种组合
+  
+  \n\n### 📋 测试用例类型
+  \n#### 1. 分支覆盖测试用例
+  \n- **if分支测试**: 条件为真/假的不同路径
+  \n- **switch分支测试**: 每个case分支的测试
+  \n- **循环分支测试**: 循环执行0次、1次、多次
+  
+  \n\n#### 2. 边界值测试用例
+  \n- **数值边界**: 最小值、最大值、临界值
+  \n- **字符串边界**: 空字符串、单字符、最大长度
+  \n- **指针边界**: NULL指针、有效指针
+  
+  \n\n#### 3. 异常情况测试用例
+  \n- **无效输入**: 超出范围的值、错误类型
+  \n- **异常状态**: 错误条件、异常处理
+  \n- **资源异常**: 内存不足、文件不存在
+  
+  \n\n### 🔧 覆盖率测试技术
+  \n#### 分支覆盖率计算:
+  \n- **覆盖率公式**: (已覆盖分支数 / 总分支数) × 100%
+  \n- **目标覆盖率**: 90%以上
+  \n- **关键分支**: if、switch、循环控制分支
+  
+  \n\n#### 测试数据准备:
+  \n- **等价类划分**: 有效等价类和无效等价类
+  \n- **边界值分析**: 边界值和边界值附近的值
+  \n- **错误推测**: 基于经验推测可能的错误
+  
+  \n\n### 📝 测试用例质量标准
+  \n- **覆盖率要求**: 90%以上的分支覆盖率
+  \n- **分支完整性**: 覆盖所有if和switch分支
+  \n- **可重复性**: 测试结果应该一致
+  \n- **独立性**: 测试用例之间不应相互依赖
+  \n- **可维护性**: 测试用例应该易于理解和修改
+  \n- **可执行性**: 生成的测试用例可以直接执行
+  \n- **可验证性**: 期望输出必须准确且可验证
+  
+  \n\n### ✅ 覆盖率验证方法
+  \n- **代码覆盖率工具**: 使用覆盖率分析工具验证
+  \n- **分支路径分析**: 分析每个分支的执行情况
+  \n- **覆盖率报告**: 生成详细的覆盖率报告
+  \n- **覆盖率缺口**: 识别未覆盖的分支并补充测试用例"
+  
+} 

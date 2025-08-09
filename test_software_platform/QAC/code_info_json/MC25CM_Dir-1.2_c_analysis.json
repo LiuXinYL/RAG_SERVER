@@ -1,0 +1,29 @@
+{
+  "file_info": {
+    "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Dir-1.2.c",
+    "file_name": "MC25CM_Dir-1.2.c",
+    "total_lines": 236,
+    "functions": [],
+    "global_variables": [],
+    "includes": [
+      "misra.h",
+      "mc25cmex.h"
+    ],
+    "defines": [],
+    "typedefs": [],
+    "structs": [],
+    "enums": [],
+    "parse_errors": [
+      "使用简化解析模式"
+    ],
+    "file_hash": "fcb3f0ba00190a8413f50dc482e7ad37",
+    "parse_time": "2025-07-30T16:32:54.226979"
+  },
+  "functions": [],
+  "statistics": {
+    "total_functions": 0,
+    "total_variables": 0,
+    "total_lines": 236,
+    "has_errors": true
+  }
+}

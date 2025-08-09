@@ -1,0 +1,20 @@
+└── RAG_SERVER/
+    ├── bid_api.py
+    ├── chat_rag.py
+    ├── config.py
+    ├── dir_path_show.py
+    ├── llm_init.py
+    ├── project_structure.md
+    ├── project_structure.txt
+    ├── rag_api.py
+    ├── test.py
+    └── dify_/
+        ├── detection_api.py
+        ├── docx2pdf_.py
+        ├── find_headline.py
+        ├── markitdown_.py
+        ├── upload_file_run_workflow.py
+               └── word_parse1.py
+			   
+			   
+export PYTHONPATH=$PYTHONPATH:/home/yftest/llm_project

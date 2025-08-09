@@ -1,0 +1,78 @@
+{
+  "file_info": {
+    "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Dir-1.1-C90.c",
+    "file_name": "MC25CM_Dir-1.1-C90.c",
+    "total_lines": 753,
+    "functions": [],
+    "global_variables": [],
+    "includes": [
+      "misra.h\"                                         /* c90_expect: !0816 */",
+      "mc25cmex.h\"                                        /* c90_expect:  0816 */",
+      "misra.h>                                         /* c90_expect: !0815 */",
+      "mc25cmex.h>                                        /* c90_expect:  0815 */",
+      "stddef.h>  /* for size_t         */",
+      "stdio.h>   /* for scanf & printf */",
+      "tgmath.h>                                        /* expect: 5131 */",
+      "fenv.h",
+      "MC25CM_Dir-1.1-C90.h\"                              /* c90_expect:  0816 */",
+      "MC25CM_Dir-1.1-C90-0857.h\"                         /* c90_expect:  0857 */"
+    ],
+    "defines": [
+      {
+        "name": "a_name_longer_than_c90_requires_of_a_macro",
+        "definition": "VLN",
+        "line": 609
+      },
+      {
+        "name": "c23456789012345678901234567890x",
+        "definition": "1",
+        "line": 612
+      },
+      {
+        "name": "c23456789012345678901234567890y",
+        "definition": "2            /* c90_expect: !0792 */",
+        "line": 613
+      },
+      {
+        "name": "d234567890123456789012345678901x",
+        "definition": "3",
+        "line": 615
+      },
+      {
+        "name": "d234567890123456789012345678901y",
+        "definition": "4            /* c90_expect:  0792 */",
+        "line": 616
+      },
+      {
+        "name": "MY_STRINGIFIED(X)",
+        "definition": "#X",
+        "line": 628
+      },
+      {
+        "name": "C90_TOO_MANY_PARAMETERS(",
+        "definition": "\\",
+        "line": 633
+      },
+      {
+        "name": "DIR_0101_C90_1030(X,",
+        "definition": "...)                      /* c90_expect:  1030 */",
+        "line": 683
+      }
+    ],
+    "typedefs": [],
+    "structs": [],
+    "enums": [],
+    "parse_errors": [
+      "使用简化解析模式"
+    ],
+    "file_hash": "a3bf81554eed55c5c0a5aafaef76c469",
+    "parse_time": "2025-07-30T16:32:54.218186"
+  },
+  "functions": [],
+  "statistics": {
+    "total_functions": 0,
+    "total_variables": 0,
+    "total_lines": 753,
+    "has_errors": true
+  }
+}

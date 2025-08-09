@@ -1,0 +1,43 @@
+{
+  "file_info": {
+    "file_path": "e:\\python_project\\D_large_models\\RAG_SERVER\\QAC\\code\\MC25CM_Dir-1.2-C90.c",
+    "file_name": "MC25CM_Dir-1.2-C90.c",
+    "total_lines": 280,
+    "functions": [],
+    "global_variables": [],
+    "includes": [
+      "misra.h",
+      "mc25cmex.h",
+      "stddef.h> /* for size_t */",
+      "tgmath.h>                                        /* expect: 5131 */",
+      "fenv.h"
+    ],
+    "defines": [
+      {
+        "name": "MY_STRINGIFIED(X)",
+        "definition": "#X",
+        "line": 180
+      },
+      {
+        "name": "RULE_0102_C90_1030(X,",
+        "definition": "...)                     /* c90_expect:  1030 */",
+        "line": 210
+      }
+    ],
+    "typedefs": [],
+    "structs": [],
+    "enums": [],
+    "parse_errors": [
+      "使用简化解析模式"
+    ],
+    "file_hash": "7e0f5ecd4387c682e6af8eabdbe36a61",
+    "parse_time": "2025-07-30T16:32:54.224189"
+  },
+  "functions": [],
+  "statistics": {
+    "total_functions": 0,
+    "total_variables": 0,
+    "total_lines": 280,
+    "has_errors": true
+  }
+}
